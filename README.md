@@ -1,6 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5702ba89-7242-490e-b04d-e4a691faced5/deploy-status)](https://app.netlify.com/sites/fernfolio/deploys)
-
-# Sebastian Cacean's Personal Webpage
+# 👱 Sebastian Cacean's Personal Webpage
 
 This repo contains my personal webpage. It is is built with <a href="https://www.11ty.dev/" target="_blank">Eleventy</a> based on the <a href="https://github.com/TylerMRoderick/fernfolio-11ty-template/tree/master" target="_blank">Fernfolio starter</a>.
 
@@ -24,7 +22,7 @@ After you have done that once, you only need to repeat step 4 & 5 to run the web
 
 > Generate minified production build
 
-Use this as the "Publish command" if needed by hosting such as Netlify.
+Use this as the "Publish command".
 
 ## Deployment on Github Pages
 
