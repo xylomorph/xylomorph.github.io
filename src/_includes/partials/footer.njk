@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <small>Connect with me on</small> 
+  <div class="social__links" align="center">
+  {% for social in home.socials %}   
+    <a target = "blank" href="{{ social.link | url }}" class="social__link-{{ social.slug }}" align="center"></a>
+  {% endfor %}    
+  </div>
+  <div class="break"></div> <!-- break -->
+  <small>
+    © 2024 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> |
+    <a href="{{ '/credits' | url }}">Credits</a>
+  </small>
+</footer>

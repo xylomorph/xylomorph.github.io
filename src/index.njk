@@ -1,0 +1,45 @@
+---
+layout: base.njk
+section: home
+---
+<div class="home-page">
+	<div class="home-page__bg-square"></div>
+
+  {# Hero #}
+  <div class="hero">
+    <div class="hero__col">
+      {% if home.title %}
+      <h1 class="hero__title">{{ home.title }}</h1>
+      {% endif %}
+      {% if home.body %}
+        <div class="hero__body">{{ home.body | markdown | safe }}</div>
+      {% endif %}
+    </div>
+    <div class="hero__col__center">
+      {% image
+        home.image,
+        home.image_alt,
+        "(min-width: 1024px) 50vw, 100vw",
+        "hero__image shadow",
+        "eager"
+      %}
+      <div class="social__links">
+      {% for social in home.socials %}   
+        <a target = "blank" href="{{ social.link | url }}" class="social__link-{{ social.slug }}" align="center"></a>
+      {% endfor %}    
+      </div>
+     
+    </div>
+  </div>
+
+  {# Projects #}
+  <!--
+  <div class="list-header">
+    <h2 class="list-header__title">Posts</h2>
+    <a class="btn btn--outline btn--sm" href="/projects">View All</a>
+  </div>
+  {% from "macros/projectlist.njk" import projectlist %}
+  {{ projectlist(projects = collections.project | reverse) }}
+  -->
+  
+</div>

@@ -1,0 +1,34 @@
+{
+    "image": "src/assets/img/IMG_6645_small_sw.jpg",
+    "image_alt": "sebastian cacean",
+	"title": "Sebastian Cacean",
+    "body": "I am a researcher at the Karlsruhe Institute of Technology with a background in philosophy and natural sciences. My research interests include argumentation analysis, (methodology of) content analysis, applied ethics, formal epistemology and philosophy of science.",
+    "socials": [
+		{
+			"slug": "academia",
+			"label": "Academia",
+			"link": "https://kit.academia.edu/SebastianCacean"
+		},
+		{
+			"slug": "researchgate",
+			"label": "ResearchGate",
+			"link": "https://www.researchgate.net/profile/Sebastian-Cacean-2"
+		},
+		{
+			"slug": "github",
+			"label": "Github",
+			"link": "https://github.com/xylomorph"
+		},
+		{
+			"slug": "twitter",
+			"label": "Twitter",
+			"link": "https://twitter.com/SebastianCacean"
+		},
+		{
+			"slug": "linkedin",
+			"label": "LinkedIn",
+			"link": "https://www.linkedin.com/in/sebastian-cacean/"
+		}
+			]
+    
+}
