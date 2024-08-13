@@ -1,7 +1,7 @@
 {
-  "name": "fernfolio-11ty-template",
+  "name": "Sebastian Cacean's website.",
   "version": "1.0.0",
-  "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
+  "description": "Personal webpage.",
   "scripts": {
     "start": "cross-env npm-run-all build:sass --parallel watch:*",
     "build": "cross-env npm-run-all build:sass build:scripts build:eleventy",
@@ -12,22 +12,22 @@
     "watch:eleventy": "eleventy --serve --incremental",
     "build:eleventy": "eleventy",
     "postbuild": "postcss _site/assets/css/*.css -u autoprefixer cssnano -r --no-map",
-    "clean": "rimraf './_site'"
+    "clean": "rimraf './_site'",
+    "deploy": "gh-pages -d _site -t true"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tylerMRoderick/fernfolio-11ty-template"
+    "url": "https://github.com/xylomorph/xylomorph.github.io"
   },
   "author": {
-    "name": "Tyler M. Roderick",
-    "email": "troderick@protonmail.com",
-    "url": "https://www.tylerroderick.com/"
+    "name": "Sebastian Cacean",
+    "url": "https://github.com/xylomorph/xylomorph.github.io"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tylerMRoderick/fernfolio-11ty-template/issues"
+    "url": "https://github.com/xylomorph/xylomorph.github.io/issues"
   },
-  "homepage": "https://github.com/tylerMRoderick/fernfolio-11ty-template",
+  "homepage": "https://github.com/xylomorph/xylomorph.github.io",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^3.1.8",
@@ -37,6 +37,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.12",
     "esbuild": "^0.14.53",
+    "gh-pages": "^6.1.1",
     "html-minifier": "^4.0.0",
     "luxon": "^1.25.0",
     "markdown-it": "^13.0.2",
