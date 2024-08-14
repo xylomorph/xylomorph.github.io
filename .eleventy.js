@@ -68,6 +68,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/favicon.ico');
   eleventyConfig.addPassthroughCopy('./src/admin');
   eleventyConfig.addPassthroughCopy('./src/assets/img');
+  // Copy .nojekyll to route of /_site (since we are publishing from branch that is pushed via npm gh-pages thing (see deploy-script in package.json))
+  eleventyConfig.addPassthroughCopy("./src/.nojekyll");
+  eleventyConfig.addPassthroughCopy("./src/CNAME");
+
 
   // Allow Turbolinks to work in development mode
   eleventyConfig.setBrowserSyncConfig(browserSyncConfig);
