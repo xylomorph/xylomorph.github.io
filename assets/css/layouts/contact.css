@@ -1,0 +1,101 @@
+.contact-form__submit {
+  display: block;
+}
+
+.social__links {
+  padding: 0px;
+  margin: 5px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link-linkedin {
+  background-image: url("/assets/img/icon-linkedin.svg");
+  background-size: contain;
+  margin: 2px;
+  width: 24px;
+  height: 24px;
+}
+.social__link-linkedin:hover {
+  border-bottom: none;
+  background-image: url("/assets/img/icon-linkedin-hover.svg");
+}
+:root[data-theme=dark] .social__link-linkedin:hover {
+  background-image: url("/assets/img/icon-linkedin.svg");
+}
+:root[data-theme=dark] .social__link-linkedin {
+  background-image: url("/assets/img/icon-linkedin-hover.svg");
+}
+.social__link-twitter {
+  background-image: url("/assets/img/icon-twitter.svg");
+  background-size: contain;
+  margin: 2px;
+  width: 24px;
+  height: 24px;
+}
+.social__link-twitter:hover {
+  border-bottom: none;
+  background-image: url("/assets/img/icon-twitter-hover.svg");
+}
+:root[data-theme=dark] .social__link-twitter:hover {
+  background-image: url("/assets/img/icon-twitter.svg");
+}
+:root[data-theme=dark] .social__link-twitter {
+  background-image: url("/assets/img/icon-twitter-hover.svg");
+}
+.social__link-github {
+  background-image: url("/assets/img/icon-github.svg");
+  background-size: contain;
+  margin: 2px;
+  width: 24px;
+  height: 24px;
+}
+.social__link-github:hover {
+  border-bottom: none;
+  background-image: url("/assets/img/icon-github-hover.svg");
+}
+:root[data-theme=dark] .social__link-github:hover {
+  background-image: url("/assets/img/icon-github.svg");
+}
+:root[data-theme=dark] .social__link-github {
+  background-image: url("/assets/img/icon-github-hover.svg");
+}
+.social__link-academia {
+  background-image: url("/assets/img/icon-academia.svg");
+  background-size: contain;
+  margin: 2px;
+  width: 24px;
+  height: 24px;
+}
+.social__link-academia:hover {
+  border-bottom: none;
+  background-image: url("/assets/img/icon-academia-hover.svg");
+}
+:root[data-theme=dark] .social__link-academia:hover {
+  background-image: url("/assets/img/icon-academia.svg");
+}
+:root[data-theme=dark] .social__link-academia {
+  background-image: url("/assets/img/icon-academia-hover.svg");
+}
+.social__link-researchgate {
+  background-image: url("/assets/img/icon-researchgate.svg");
+  background-size: contain;
+  margin: 2px;
+  width: 24px;
+  height: 24px;
+}
+.social__link-researchgate:hover {
+  border-bottom: none;
+  background-image: url("/assets/img/icon-researchgate-hover.svg");
+}
+:root[data-theme=dark] .social__link-researchgate:hover {
+  background-image: url("/assets/img/icon-researchgate.svg");
+}
+:root[data-theme=dark] .social__link-researchgate {
+  background-image: url("/assets/img/icon-researchgate-hover.svg");
+}
