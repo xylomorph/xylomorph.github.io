@@ -6,7 +6,7 @@ permalink: /projects/index.html
 metaDescription: Blogpost by Sebastian Cacean
 subtitle: Here, I will occasionally write about books I read and about philosophical matters from an argumentation-theoretic perspective.
 emoji: 💻
-eleventyNavigation:
-  key: Blog
-  order: 3
+# eleventyNavigation:
+#   key: Blog
+#   order: 3
 ---
