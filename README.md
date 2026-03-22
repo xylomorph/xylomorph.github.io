@@ -12,6 +12,10 @@ This repo contains my personal webpage. It is is built with <a href="https://www
 
 After you have done that once, you only need to repeat step 4 & 5 to run the website locally.
 
+Remarks:
+
++ `npm install` installs all dependencies locally into `node_modules/` inside the project directory — no `sudo` needed.
+
 ## 💻 Development Scripts
 
 **`npm start`**
@@ -30,7 +34,7 @@ The basic idea is to publish from a separate github branch by using [gh-pages](h
 
 1. Install gh-pages (when deploying for the first time): `npm install gh-pages --save-dev`.
 2. Build the website: `npm run build` (generates fresh output into the directory `_site`).
-3. Deploy on githup: `npm run deploy`.
+3. Deploy on github: `npm run deploy`.
 
 ## License
 
