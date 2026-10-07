@@ -16,18 +16,10 @@ links:
 - icon: file-pdf
   name: "Rendered Example PDF Document"
   url: https://github.com/xylomorph/argdown-quarto-pdf-template/blob/main/example-doc.pdf
-# share:
-#   description: "awesome page"
-#   twitter: true
-#   # facebook: true
-#   # reddit: true
-#   # stumble: true
-#   # tumblr: true
-#   linkedin: true
-#   # email: true
-#   mastodon: true
-#   bsky: true
-#   permalink: "https://sebastiancacean.com/posts/quarto-argdown-pdf-documents/"
+website:
+  comments:
+    giscus:
+      mapping: "quarto-argdown-pdf-documents"
 ---
 
 <!--

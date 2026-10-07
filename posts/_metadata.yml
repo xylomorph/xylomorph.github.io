@@ -36,8 +36,6 @@ format:
 
 lightbox: true
 
-# TODO: Move to _metadata.yml
-# check if everything works with the new social share buttons
 # TODO (later/long term): Fix type issues (currently it get `mics` for bibtex and `Journal article` on Zotero import.) 
 citation: true
   # title: Document title will be used if not provided.
@@ -47,3 +45,14 @@ twitter-card:
   image: featured.png
 open-graph:
   image: featured.png
+
+# comments with Giscus
+website:
+  comments:
+    giscus:
+      repo: xylomorph/xylomorph.github.io
+      category: Announcements
+      reactions-enabled: true
+      theme:
+        light: light # giscus theme used for light website theme
+        dark: dark_dimmed # giscus theme used for dark website theme
