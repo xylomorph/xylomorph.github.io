@@ -32,7 +32,7 @@ package-lock.json
 .github/instructions/
 .vscode/
 
-/docs/
+# /docs/
 
 # Ignore everything in public except README.md
 /public/*
