@@ -9,8 +9,8 @@ project:
 
 website:
   description: "Personal Website of Sebastian Cacean"
-  # xx
-  site-url: http://127.0.0.1:4000/
+  # site-url: http://127.0.0.1:4000/
+  site-url: https://sebastiancacean.de/
   title: "Sebastian Cacean"
   favicon: "assets/images/logo.png"
   back-to-top-navigation: true
