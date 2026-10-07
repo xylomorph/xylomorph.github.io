@@ -1,0 +1,76 @@
+%% Creator: Inkscape 1.4.4 (dcaf3e7d9e, 2026-05-05), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'svg-xml-base64,PD94b_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{634.65997314bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.34232503)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{svg-xml-base64,PD94b_svg-tex.pdf}}%
+    \put(0.4674629,0.31875336){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Main claim}\end{tabular}}}}%
+    \put(0.38647466,0.29039171){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Main claim, justified or criticised by\end{tabular}}}}%
+    \put(0.44819277,0.27148395){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l} arguments. #pro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{svg-xml-base64,PD94b_svg-tex.pdf}}%
+    \put(0.11670816,0.17076859){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{1. Argument}\end{tabular}}}}%
+    \put(0.01641824,0.14240695){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Argument supporting the main claim. #pro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{svg-xml-base64,PD94b_svg-tex.pdf}}%
+    \put(0.46177484,0.18022248){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{2. Argument}\end{tabular}}}}%
+    \put(0.37330225,0.15186083){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Another argument supporting the main\end{tabular}}}}%
+    \put(0.46702172,0.13295307){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l} claim. #pro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{svg-xml-base64,PD94b_svg-tex.pdf}}%
+    \put(0.75651534,0.18022248){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{3. Argument (objection)}\end{tabular}}}}%
+    \put(0.71617877,0.15186083){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Argument formulating an objection to\end{tabular}}}}%
+    \put(0.77049132,0.13295307){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l} the main claim. #con\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{svg-xml-base64,PD94b_svg-tex.pdf}}%
+    \put(0.76264458,0.04169161){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{4. Argument (rebuttal)}\end{tabular}}}}%
+    \put(0.71091611,0.01332996){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Argument rebutting the objection. #pro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{svg-xml-base64,PD94b_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%

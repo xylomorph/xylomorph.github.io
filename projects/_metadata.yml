@@ -1,0 +1,17 @@
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: true
+
+# Enable banner style title blocks
+# If set `true` Quarto will use `banner/title-block.html`
+title-block-banner: true
+lightbox: true
+
+format: 
+  html: 
+    # template partials have to use matching title and subpath
+    template-partials: 
+      - ../assets/partials/title-block.html
+      - ../assets/partials/banner/title-block.html

@@ -1,0 +1,343 @@
+---
+title: "Schlussmuster & Formalisierung"
+subtitle: "Handout zur Übersicht"
+author: "Sebastian Cacean"
+date: "2026-08-01"
+categories: [news, code, analysis]
+draft: true
+---
+
+## Karte
+
+```argdown-map
+[Main claim]: Main claim, justified or criticised by arguments. #pro
+    + <1. Argument>: Argument supporting the main claim. #pro
+    + <2. Argument>: Another argument supporting the main claim. #pro
+    - <3. Argument (objection)>: Argument formulating an objection 
+    to the main claim. #con
+        - <4. Argument (rebuttal)>: Argument rebutting the objection. #pro
+```
+
+
+## Wichtige Definitionen & Erläuterungen
+
++ **Deduktiv gültige Argumente**: Ein Argument ist genau dann deduktiv gültig, wenn gilt: Sind die Prämissen wahr, kann die Konklusion nicht falsch sein.
++ **Schlüssige Argumente** (stichhaltige Argumente): Ein Argument schlüssig genau dann, wenn es deduktiv gültig ist und seine Prämissen wahr sind.^[very tedious...]
++ **Gültige Schlüsse der Aussagenlogik**: Gültigkeit ergibt sich durch die Bedeutung der aussagenlogischen Satzoperatoren (*Wenn..., dann...*, *nicht*, *oder* und *und*).
++ Sätze der Form *"Wenn p, dann q."* (Subjunktionen) drücken notwendige und hinreichende Bedingungen aus.
+	+ p ist hinreichend für q und q ist notwendig für p.
+
+
+## Satzoperatoren der Aussagenlogik
+
+| Satzoperator | Satzform (schematisch) | Aussagenlogische Formel |
+|--------------|------------------------|-------------------------|
+| Subjunktion (materiales Konditional) | `'Wenn p, dann q.'`| '$p\rightarrow q$' oder '$p\supset q$'
+| Bisubjunktion (Bikonditional) | `'p genau dann, wenn q.'` |  '$p\leftrightarrow q$' oder '$p\equiv q$' |
+| Disjunktion (Adjunktion) | `'p oder q.'` | '$p\vee q$' |
+| Konjunktion | `'p und q.'`| '$p\wedge q$' oder '$p.q$' oder '$p\&q$'|
+| Negation | `'Es ist nicht der Fall, dass p.'` | '$\neg p$' oder auch '$\sim p$'|
+
+
+## Schlussmuster
+
+### Konjunktionseinführung
+
+```argdown
+<Argumentschema Konjunktionseinführung>
+
+(1) p.
+(2) q.
+-- mit Konjunktionseinführung aus 1,2 --
+(3) *Also*: p und q.
+```
+
+### Konjunktionsbeseitigung
+
+```argdown
+<Argumentschema Konjunktionsbeseitigung>
+
+(1) p und q.
+-- mit Konjunktionsbeseitigung aus 1 --
+(3) *Also*: p.
+```
+
+### Disjunktionseinführung
+
+```argdown
+<Argumentschema Disjunktionseinführung>
+
+(1) p.
+-- mit Disjunktionseinführung aus 1,2 --
+(3) *Also*: p oder q.
+```
+
+### Disjunktiver Syllogismus / Adjunktiver Syllogismus
+
+```argdown
+<Argumentschema Disjunktiver Syllogismus>
+
+(1) p oder q.
+(2) nicht p.
+-- aus 1,2 mit disj. Syll. --
+(3) *Also*: q.
+```
+
+Variante mit mehr als 2 Alternativen:
+
+```argdown
+<Argumentschema Disjunktiver Syllogismus>
+
+(1) p oder r oder ... oder s oder q.
+(2) nicht p.
+(3) nicht r
+    ...
+(n) nicht s
+-- aus 1 bis n mit disj. Syll. --
+(3) *Also*: q.
+```
+
+
+### Kontravalenz
+
+```argdown
+<Argumentschema Kontravalenz>
+
+(1) Entweder p oder q.
+(2) p.
+-- aus 1,2 mit Kontravalenz--
+(3) *Also*: q ist falsch.
+```
+
+### Prinzip der doppelten Negation
+
+```argdown
+<Argumentschema: Prinzip der doppelten Negation>
+
+(1) Es ist nicht der Fall, dass es nicht der Fall ist, dass p.
+-- mit Prinzip der doppelten Negation aus 1 --
+(2) *Also*: p.
+```
+
+```argdown
+<Argumentschema: Prinzip der doppelten Negation>
+
+(1) p.
+-- mit Prinzip der doppelten Negation aus 1 --
+(2) *Also*: Es ist nicht der Fall, dass es nicht der Fall ist, dass p.
+```
+
+### Modus Ponens
+
+```argdown
+<Argumentschema Modus Ponens>
+
+(1) Wenn p, dann q.
+(2) p.
+-- mit Modus Ponens aus 1,2 --
+(3) *Also*: q.
+```
+
+### Modus Tollens
+
+```argdown
+<Argumentschema Modus Tollens>
+
+(1) Wenn p, dann q.
+(2) Es ist nicht der Fall, dass q.
+-- mit Modus Tollens aus 1,2 --
+(3) *Also*: Es ist nicht der Fall, dass p.
+```
+
+
+### Klassisches Dilemma
+
+```argdown
+<Argumentschema Klassisches Dilemma>
+
+(1) Wenn p, dann r.
+(2) Wenn nicht p, dann r.
+-- aus 1,2, mit klass. Dilemma --
+(3) Also: r.
+```
+
+### Allgemeines Dilemma / Fallunterscheidung
+
+```argdown
+<Argumentschema Allgemeines Dilemma>
+
+(1) p oder q.
+(2) Wenn p, dann r.
+(3) Wenn q, dann r.
+-- aus 1-3 mit allg. Dilemma --
+(4) *Also*: r.
+```
+
+```argdown
+<Argumentschema Allgemeines Dilemma>
+
+(1) p oder q oder ... oder ...
+(2) Wenn p, dann r.
+(3) Wenn q, dann r.
+(4) Wenn ..., dann r.
+(5) ...
+-- aus 1-... mit allg. Dilemma --
+(6) *Also*: r.
+```
+
+### Kontraposition
+
+```argdown
+<Argumentschema Kontraposition>
+
+(1) Wenn p, dann q.
+-- aus 1 mit Kontraposition--
+(2) *Also*: Wenn q falsch ist, dann ist p falsch.
+```
+### De Morgan'sche Regeln
+
+Die folgenden Schlussmuster nutzen die folgenden Äquivalenzen aus:
+
++ Konjunktionen der Form `¬(p∧q)` sind äquivalent zu Disjunktionen der Form `¬p∨¬q`.
++ Disjunktionen der Form `¬(p∨q)` sind äquivalent zu Konjunktionen der Form `¬p∧¬q`.
+
+```argdown
+(1) Es ist nicht der Fall, dass p und q.
+  // ¬(p∧q)
+-- mit De Morgan'scher Regel aus 1 --
+(2) *Also*: Es ist nicht der Fall, dass p oder es ist nicht der Fall, dass q.
+  // ¬p∨¬q
+```
+
+```argdown
+(1) Es ist nicht der Fall, dass p oder es ist nicht der Fall, dass q.
+  // ¬p∨¬q
+-- mit De Morgan'scher Regel aus 1 --
+(2) *Also*: Es ist nicht der Fall, dass p und q.
+  // ¬(p∧q)
+```
+
+```argdown
+(1) Es ist nicht der Fall, dass p oder q.
+  // ¬(p∨q)
+-- mit De Morgan'scher Regel aus 1 --
+(2) *Also*: Es ist nicht der Fall, dass p und es ist nicht der Fall, dass q.
+  // ¬p∧¬q
+```
+
+```argdown
+(1) Es ist nicht der Fall, dass p und es ist nicht der Fall, dass q.
+  // ¬p∧¬q
+-- mit De Morgan'scher Regel aus 1 --
+(2) *Also*: Es ist nicht der Fall, dass p oder q.
+  // ¬(p∨q)
+```
+
+### Transitivität (Kettenregel)
+
+```argdown
+<Argumentschema Transitivität>
+
+(1) Wenn p, dann q.
+(2) Wenn q, dann r.
+-- aus 1,2 mit Transitivität --
+(3) *Also*: Wenn p, dann r.
+```
+
+### Annahmen um des Arguments willen
+
+::: {.callout-note}
+## Annahmen um des Arguments willen
+
+Sätze, die im Laufe einer Begründung hypothetisch unterstellt werden, von deren Wahrheit aber nicht die Wahrheit der Konklusion abhängt, heißen “Annahmen um des Arguments willen”
+:::
+
+::: {.callout-important}
++ Annahmen um des Arguments willen sind **keine Prämissen**! Sie müssen als Annahmen um des Arguments willen gekennzeichnet werden.
++ Aus Annahmen um des Arguments willen können – wie aus Prämissen und Zwischenkonklusionen – unter Anwendung der Schlussregeln Zwischenkonklusionen gezogen werden.
++ Alle Schlussschritte, in denen Annahmen um des Arguments willen oder aber aus diesen bereits gefolgerte Zwischenkonklusionen verwendet werden, müssen mit der Nummer der jeweiligen Annahme um des Arguments willen gekennzeichnet werden.
+:::
+
+
+#### Annahmebeseitigung
+
+```argdown
+(1) *Annahme um des Arguments willen:* p
+   ...
+-- folgt mit ... aus ... (hängt ab von 1) --
+(n) q
+-- folgt aus 1, n mit Annahmebeseitigung --
+(n+1) Wenn p, dann q.
+```
+
+#### Annahmewiderlegung (reductio ad absurdum)
+
+```argdown
+(1) *Annahme um des Arguments willen:* p
+   ...
+-- folgt mit ... aus ... (hängt ab von 1) --
+(n) q und es ist nicht der Fall, dass q.
+-- folgt aus 1,n mit Annahmewiderlegung --
+(n+1) Es ist nicht der Fall, dass p.
+```
+
+### Allspezialisierung
+
+```argdown
+<Argumentschema Allspezialisierung>
+
+(1) Für alle x gilt: x ist F.
+-- mit Allspez. aus 1 --
+(2) Also: Für den Einzelgegenstand a gilt F.
+```
+
+Oder:
+
+```argdown
+<Argumentschema Allspezialisierung>
+
+(1) Für alle x gilt: Wenn x F ist, ist x auch G.
+-- mit Allspez. aus 1 --
+(2) *Also*: Für den Einzelgegenstand a gilt: Ist a F,
+	ist a auch G.
+```
+
+Schematisch angedeutet in einer ganz allgemeinen Form:
+
+```argdown
+<Argumentschema Allspezialisierung>
+
+(1) Für alle x gilt: ... x ... .
+-- mit Allspez. aus 1 --
+(2) *Also*: Für den Einzelgegenstand a gilt: ... a ... .
+```
+
+### Analogieargumente
+
+```argdown
+(1) Gegenstände X verhalten sich in Bezug auf den Aspekt Z* genauso wie
+    Gegenstände Y in Bezug auf den Aspekt Z.
+(2) Auf Gegenstände Y trifft hinsichtlich Z S zu.
+(3) Der Sachverhalt S* hinsichtlich Z* entspricht dem Sachverhalt S 
+    hinsichtlich Z.
+(4) *Analogieprinzip:* Gilt
+      (i) Gegenstände X verhalten sich in Bezug auf den Aspekt Z* genauso wie
+      Gegenstände Y in Bezug auf den Aspekt Z
+      (ii) Auf Gegenstände Y trifft hinsichtlich Z S zu
+      (iii) Der Sachverhalt S* hinsichtlich Z* entspricht dem Sachverhalt S 
+      hinsichtlich Z
+    dann gilt auch: Auf Gegenstände X trifft S* zu.
+-- aus 1-4 mit Allspezialisierung, KE und MP --
+(5) *Also:* Auf Gegenstände X trifft S* zu.
+```
+
+Für eine Instantiierung dieses Schemas (also der Formulierung eines konkreten Analogieargument) müssen Sie für die Prämissen 1-3 und die Konklusion konkrete Inhalte angeben. Das allgemeine Prinzip (Prämisse 4) bleibt so stehen (und wird über die Allspezialisierung auf die konkrete Analogie angewendet).
+
+### Argumentschema: Schluss auf die beste Erklärung
+
+```argdown
+(1) p
+(2) Die Annahme, dass q, ist die beste Erklärung für p.
+-- aus 1,2 mit dem Schluss auf die beste Erklärung --
+(3) q
+```

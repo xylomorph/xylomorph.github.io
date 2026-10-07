@@ -1,0 +1,49 @@
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: true
+
+# Enable banner style title blocks
+# If set `true` Quarto will use `banner/title-block.html`
+title-block-banner: true
+
+author: Sebastian Cacean
+license: CC BY
+fig-cap-location: top
+
+format: 
+  html: 
+    # template partials have to use matching title and subpath
+    template-partials: 
+      - ../assets/partials/title-block.html
+      - ../assets/partials/banner/title-block.html
+  pdf:
+    documentclass: article
+    papersize: a4
+    include-in-header: ../assets/latex/_handout-packages.tex
+    template-partials:
+      - ../assets/latex/before-body.tex
+    syntax-definitions:
+      - ../assets/pandoc/argdown.xml
+    syntax-highlighting: ../assets/pandoc/argdown.theme
+    # Required for the LaTeX svg package to call Inkscape when converting
+    # inline SVG images produced by the argdown-filter (mode: inline, format: svg).
+    pdf-engine-opt: "-shell-escape"
+    argdown:
+      mode: inline
+      format: svg
+
+lightbox: true
+
+# TODO: Move to _metadata.yml
+# check if everything works with the new social share buttons
+# TODO (later/long term): Fix type issues (currently it get `mics` for bibtex and `Journal article` on Zotero import.) 
+citation: true
+  # title: Document title will be used if not provided.
+  # url: will be synthesized for current document if a site-url has been specified.
+google-scholar: true
+twitter-card:
+  image: featured.png
+open-graph:
+  image: featured.png

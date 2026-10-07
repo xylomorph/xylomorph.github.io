@@ -1,0 +1,93 @@
+project:
+  type: website
+  resources:
+    - "assets/**"
+  render:
+    - "*.qmd"
+    - "!misc/**"
+  output-dir: docs
+
+website:
+  description: "Personal Website of Sebastian Cacean"
+  # xx
+  site-url: http://127.0.0.1:4000/
+  title: "Sebastian Cacean"
+  favicon: "assets/images/logo.png"
+  back-to-top-navigation: true
+  # helping the robots
+  llms-txt: true
+  navbar:
+    pinned: true
+    search: true
+    background: light
+    logo: "assets/images/sc5.svg"
+    right: 
+      - text: "About"
+        href: about.qmd
+      - projects.qmd
+      - blog.qmd
+
+  page-footer:
+    left: >-
+      &#169; 2024 Sebastian Cacean &#8729; Made with [Quarto](https://quarto.org)
+    center: |
+      <a href="https://www.linkedin.com/in/sebastian-cacean/" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
+      <a href="https://github.com/xylomorph" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
+      <a href="https://kit.academia.edu/SebastianCacean" title="github" target="_blank" rel="noopener">{{< ai academia >}}</a>
+      <a href="https://www.researchgate.net/profile/Sebastian-Cacean-2" title="github" target="_blank" rel="noopener">{{< ai researchgate >}}</a>
+      <a href="https://philpeople.org/profiles/sebastian-cacean" title="github" target="_blank" rel="noopener">{{< ai philpapers >}}</a>
+    right: 
+      - text: "Imprint"
+        aria-label: "Imprint Information"
+        href: imprint.qmd
+      - icon: rss
+        href: blog.xml
+
+format:
+  html:
+    theme:
+      light:
+        - spacelab
+        - assets/styles/bc-theme-light.scss
+      dark:
+        - spacelab
+        - assets/styles/bc-theme-dark.scss
+    respect-user-color-scheme: true
+    css: assets/styles/styles.css
+    reference-location: margin
+    footnotes-hover: true
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    argdown:
+      mode: web-component
+      sourceHighlighter: web-component
+      config: argdown.config.json
+
+filters:
+  - node_modules/.bin/argdown-filter
+
+babelquarto:
+  languagelinks: navbar
+  languagecodes:
+  - name: de
+    text: "DE"
+  - name: en
+    text: "EN"
+  mainlanguage: 'en'
+  languages: ['de']
+title-de: Sebastian Cacean
+description-de: Persönliche Webseite von Sebastian Cacean
+author-de: Sebastian Cacean
+lang: en
+
+crossref:
+  custom:
+    - kind: float
+      reference-prefix: Argdown Snippet
+      key: argdown
+      latex-env: argdown
+    - kind: float
+      reference-prefix: Argument Map
+      key: argdownmap
+      latex-env: argdownmap

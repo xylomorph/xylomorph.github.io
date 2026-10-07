@@ -1,0 +1,41 @@
+.DS_Store
+.Rproj.user
+.Rhistory
+.RData
+__pycache__/
+.venv/
+.env
+output/
+*.nb.html
+
+/.quarto/
+/_site/
+/output/
+/*.pdf
+/misc/
+**/*.quarto_ipynb
+
+# Quarto extensions
+/_extensions/
+
+# For new, we ignore generated content by default, but we may want to change this in the future to allow overwriting of some files (e.g. syllabus.qmd) while still protecting hand-edited files (e.g. index.qmd).
+#/content/
+#_quarto.yml
+
+
+# Node stuff
+node_modules/
+package-lock.json
+.cache/
+
+.github/agents/
+.github/instructions/
+.vscode/
+
+/docs/
+
+# Ignore everything in public except README.md
+/public/*
+!/public/README.md
+/public/**
+!/public/README.md

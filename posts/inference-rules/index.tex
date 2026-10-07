@@ -1,0 +1,803 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  english,
+  a4paper,
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{255,255,255}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.02,0.51,0.79}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.49,0.02,0.79}{\textbf{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.00,0.34,0.68}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.54,0.53,0.53}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.39,0.29,0.61}{\textbf{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.57,0.30,0.62}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.54,0.53,0.53}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.00,0.58,1.00}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.12,0.11,0.11}{\textbf{#1}}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.12,0.11,0.11}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.73,0.02,0.79}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.54,0.53,0.53}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.02,0.79,0.25}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.02,0.51,0.79}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.58,1.00}{\textbf{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.12,0.11,0.11}{\textit{#1}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.39,0.29,0.61}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{1.00,0.33,0.00}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.02,0.79,0.25}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.12,0.11,0.11}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.12,0.11,0.11}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.12,0.11,0.11}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.43,0.16}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.00,0.43,0.16}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.79,0.21,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.24,0.68,0.91}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{1.00,0.33,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.75,0.01,0.01}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.34,0.68}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.75,0.01,0.01}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.46,0.73,0.89}{\textbf{#1}}}
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\usepackage{svg}
+
+
+
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+% Search for images relative to project root at depth 0 (root), 1 (content/), and 2 (content/sub/)
+\graphicspath{{assets/images/}{../assets/images/}{../../assets/images/}}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{lucide-icons}
+\setmainfont{P052}
+\usepackage[a4paper, top=3cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headheight=60pt, headsep=8pt, footskip=1.5cm]{geometry}
+\newlength{\handoutlogooffset}
+\AtBeginDocument{%
+  \newlength{\handoutcapht}%
+  \settoheight{\handoutcapht}{\small A}%
+  \setlength{\handoutlogooffset}{\dimexpr1.2cm-\handoutcapht\relax}%
+}
+% style for Argdown codeblocks
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{xcolor}
+\mdfsetup{skipabove=\topskip,skipbelow=\topskip}
+\mdfdefinestyle{codedefault}{%
+backgroundcolor=black!4,
+roundcorner=2pt,
+linecolor=black!30,
+linewidth=0.5pt,
+leftmargin=10, rightmargin=10,
+rightline=true,
+innerleftmargin=10,innerrightmargin=10}
+% redefining the Shaded-Environment of the pandoc-template to allow customised
+% style-settings
+% Must run at \begin{document} because pandoc defines Shaded after include-in-header
+\AtBeginDocument{%
+  \ifdefined\Shaded
+    \renewenvironment{Shaded}{\centering \begin{mdframed}[style=codedefault]}{\end{mdframed}}%
+  \else
+    \newenvironment{Shaded}{\centering \begin{mdframed}[style=codedefault]}{\end{mdframed}}%
+  \fi
+}
+
+% Adjust fontsize for code-blocks if necessary (by redefining the
+% Highlighting-Environment of the pandoc-template)
+%\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small}
+\makeatletter
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{plain}
+\@ifundefined{c@chapter}{\newfloat{argdown}{h}{loargdown}}{\newfloat{argdown}{h}{loargdown}[chapter]}
+\floatname{argdown}{Argdown Snippet}
+\newcommand*\listofargdowns{\listof{argdown}{List of Argdown Snippets}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{plain}
+\@ifundefined{c@chapter}{\newfloat{argdownmap}{h}{loargdownmap}}{\newfloat{argdownmap}{h}{loargdownmap}[chapter]}
+\floatname{argdownmap}{Argument Map}
+\newcommand*\listofargdownmaps{\listof{argdownmap}{List of Argument Maps}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Schlussmuster \& Formalisierung},
+  pdfauthor={Sebastian Cacean},
+  pdflang={en},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Schlussmuster \& Formalisierung}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Handout zur Übersicht}
+\author{Sebastian Cacean}
+\date{2026-08-01}
+\begin{document}
+% ---------------------------------------------------------------
+% Handout style: colored footer on all pages, meta header on p.1
+% ---------------------------------------------------------------
+\definecolor{handoutline}{HTML}{b5cbd6}
+
+% --- Base page style: only footer, no header rule ---------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyfoot[C]{%
+  \parbox{\linewidth}{\centering
+    % \textcolor{handoutline}{\rule{\linewidth}{0.4pt}}\\[3pt]%
+    \textcolor{handoutline}{\small \thepage}%
+  }%
+}
+
+% --- First-page style: meta-info left, logo right ---------
+\fancypagestyle{firstpage}{%
+  \fancyhf{}%
+  \renewcommand{\footrulewidth}{0pt}%
+  \fancyfoot[C]{%
+    \parbox{\linewidth}{\centering
+      % \textcolor{handoutline}{\rule{\linewidth}{0.4pt}}\\[3pt]%
+      \textcolor{handoutline}{\small \thepage}%
+    }%
+  }%
+}
+
+% --- Preserve default before-body behaviour ---------------
+\renewcommand{\maketitle}{%
+  \begin{center}%
+    {\LARGE\bfseries Schlussmuster \& Formalisierung\par}%
+  \end{center}%
+  \parbox{\linewidth}{\centering
+   \small Sebastian Cacean | sebastian.cacean@hhu.de | 2026-08-01 %
+  }%
+  % \textcolor{handoutline}{\rule{\linewidth}{0.4pt}}\\[3pt]%
+  \vspace{1.5em}%
+}
+\maketitle
+\thispagestyle{firstpage}
+
+
+\subsection{Karte}\label{karte}
+
+\pandocbounded{\includesvg[keepaspectratio]{index_files/mediabag/svg-xml-base64,PD94b.svg}}
+
+\subsection{Wichtige Definitionen \&
+Erläuterungen}\label{wichtige-definitionen-erluxe4uterungen}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Deduktiv gültige Argumente}: Ein Argument ist genau dann
+  deduktiv gültig, wenn gilt: Sind die Prämissen wahr, kann die
+  Konklusion nicht falsch sein.
+\item
+  \textbf{Schlüssige Argumente} (stichhaltige Argumente): Ein Argument
+  schlüssig genau dann, wenn es deduktiv gültig ist und seine Prämissen
+  wahr sind.\footnote{very tedious\ldots{}}
+\item
+  \textbf{Gültige Schlüsse der Aussagenlogik}: Gültigkeit ergibt sich
+  durch die Bedeutung der aussagenlogischen Satzoperatoren
+  (\emph{Wenn\ldots, dann\ldots{}}, \emph{nicht}, \emph{oder} und
+  \emph{und}).
+\item
+  Sätze der Form \emph{``Wenn p, dann q.''} (Subjunktionen) drücken
+  notwendige und hinreichende Bedingungen aus.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    p ist hinreichend für q und q ist notwendig für p.
+  \end{itemize}
+\end{itemize}
+
+\subsection{Satzoperatoren der
+Aussagenlogik}\label{satzoperatoren-der-aussagenlogik}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2222}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3810}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3968}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Satzoperator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Satzform (schematisch)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Aussagenlogische Formel
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Subjunktion (materiales Konditional) &
+\texttt{\textquotesingle{}Wenn\ p,\ dann\ q.\textquotesingle{}} &
+`\(p\rightarrow q\)' oder '\(p\supset q\)' \\
+Bisubjunktion (Bikonditional) &
+\texttt{\textquotesingle{}p\ genau\ dann,\ wenn\ q.\textquotesingle{}} &
+`\(p\leftrightarrow q\)' oder '\(p\equiv q\)' \\
+Disjunktion (Adjunktion) &
+\texttt{\textquotesingle{}p\ oder\ q.\textquotesingle{}} &
+'\(p\vee q\)' \\
+Konjunktion & \texttt{\textquotesingle{}p\ und\ q.\textquotesingle{}} &
+`\(p\wedge q\)' oder `\(p.q\)' oder '\(p\&q\)' \\
+Negation &
+\texttt{\textquotesingle{}Es\ ist\ nicht\ der\ Fall,\ dass\ p.\textquotesingle{}}
+& `\(\neg p\)' oder auch '\(\sim p\)' \\
+\end{longtable}
+}
+
+\subsection{Schlussmuster}\label{schlussmuster}
+
+\subsubsection{Konjunktionseinführung}\label{konjunktionseinfuxfchrung}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Konjunktionseinführung\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p.}
+\ErrorTok{(2)}\NormalTok{ q.}
+\WarningTok{{-}{-} mit Konjunktionseinführung aus 1,2 {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ p und q.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Konjunktionsbeseitigung}\label{konjunktionsbeseitigung}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Konjunktionsbeseitigung\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p und q.}
+\WarningTok{{-}{-} mit Konjunktionsbeseitigung aus 1 {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ p.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Disjunktionseinführung}\label{disjunktionseinfuxfchrung}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Disjunktionseinführung\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p.}
+\WarningTok{{-}{-} mit Disjunktionseinführung aus 1,2 {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ p oder q.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Disjunktiver Syllogismus / Adjunktiver
+Syllogismus}\label{disjunktiver-syllogismus-adjunktiver-syllogismus}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Disjunktiver Syllogismus\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p oder q.}
+\ErrorTok{(2)}\NormalTok{ nicht p.}
+\WarningTok{{-}{-} aus 1,2 mit disj. Syll. {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ q.}
+\end{Highlighting}
+\end{Shaded}
+
+Variante mit mehr als 2 Alternativen:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Disjunktiver Syllogismus\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p oder r oder ... oder s oder q.}
+\ErrorTok{(2)}\NormalTok{ nicht p.}
+\ErrorTok{(3)}\NormalTok{ nicht r}
+\NormalTok{    ...}
+\NormalTok{(n) nicht s}
+\WarningTok{{-}{-} aus 1 bis n mit disj. Syll. {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ q.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Kontravalenz}\label{kontravalenz}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Kontravalenz\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Entweder p oder q.}
+\ErrorTok{(2)}\NormalTok{ p.}
+\WarningTok{{-}{-} aus 1,2 mit Kontravalenz{-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ q ist falsch.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Prinzip der doppelten
+Negation}\label{prinzip-der-doppelten-negation}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema: Prinzip der doppelten Negation\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Es ist nicht der Fall, dass es nicht der Fall ist, dass p.}
+\WarningTok{{-}{-} mit Prinzip der doppelten Negation aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ p.}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema: Prinzip der doppelten Negation\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p.}
+\WarningTok{{-}{-} mit Prinzip der doppelten Negation aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Es ist nicht der Fall, dass es nicht der Fall ist, dass p.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Modus Ponens}\label{modus-ponens}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Modus Ponens\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Wenn p, dann q.}
+\ErrorTok{(2)}\NormalTok{ p.}
+\WarningTok{{-}{-} mit Modus Ponens aus 1,2 {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ q.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Modus Tollens}\label{modus-tollens}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Modus Tollens\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Wenn p, dann q.}
+\ErrorTok{(2)}\NormalTok{ Es ist nicht der Fall, dass q.}
+\WarningTok{{-}{-} mit Modus Tollens aus 1,2 {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ Es ist nicht der Fall, dass p.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Klassisches Dilemma}\label{klassisches-dilemma}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Klassisches Dilemma\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Wenn p, dann r.}
+\ErrorTok{(2)}\NormalTok{ Wenn nicht p, dann r.}
+\WarningTok{{-}{-} aus 1,2, mit klass. Dilemma {-}{-}}
+\ErrorTok{(3)}\NormalTok{ Also: r.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Allgemeines Dilemma /
+Fallunterscheidung}\label{allgemeines-dilemma-fallunterscheidung}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Allgemeines Dilemma\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p oder q.}
+\ErrorTok{(2)}\NormalTok{ Wenn p, dann r.}
+\ErrorTok{(3)}\NormalTok{ Wenn q, dann r.}
+\WarningTok{{-}{-} aus 1{-}3 mit allg. Dilemma {-}{-}}
+\ErrorTok{(4)}\FloatTok{ *Also*:}\NormalTok{ r.}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Allgemeines Dilemma\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ p oder q oder ... oder ...}
+\ErrorTok{(2)}\NormalTok{ Wenn p, dann r.}
+\ErrorTok{(3)}\NormalTok{ Wenn q, dann r.}
+\ErrorTok{(4)}\NormalTok{ Wenn ..., dann r.}
+\ErrorTok{(5)}\NormalTok{ ...}
+\WarningTok{{-}{-} aus 1{-}... mit allg. Dilemma {-}{-}}
+\ErrorTok{(6)}\FloatTok{ *Also*:}\NormalTok{ r.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Kontraposition}\label{kontraposition}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Kontraposition\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Wenn p, dann q.}
+\WarningTok{{-}{-} aus 1 mit Kontraposition{-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Wenn q falsch ist, dann ist p falsch.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{De Morgan'sche Regeln}\label{de-morgansche-regeln}
+
+Die folgenden Schlussmuster nutzen die folgenden Äquivalenzen aus:
+
+\begin{itemize}
+\tightlist
+\item
+  Konjunktionen der Form \texttt{¬(p∧q)} sind äquivalent zu
+  Disjunktionen der Form \texttt{¬p∨¬q}.
+\item
+  Disjunktionen der Form \texttt{¬(p∨q)} sind äquivalent zu
+  Konjunktionen der Form \texttt{¬p∧¬q}.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\NormalTok{ Es ist nicht der Fall, dass p und q.}
+  \CommentTok{// ¬(p∧q)}
+\WarningTok{{-}{-} mit De Morgan\textquotesingle{}scher Regel aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Es ist nicht der Fall, dass p oder es ist nicht der Fall, dass q.}
+  \CommentTok{// ¬p∨¬q}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\NormalTok{ Es ist nicht der Fall, dass p oder es ist nicht der Fall, dass q.}
+  \CommentTok{// ¬p∨¬q}
+\WarningTok{{-}{-} mit De Morgan\textquotesingle{}scher Regel aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Es ist nicht der Fall, dass p und q.}
+  \CommentTok{// ¬(p∧q)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\NormalTok{ Es ist nicht der Fall, dass p oder q.}
+  \CommentTok{// ¬(p∨q)}
+\WarningTok{{-}{-} mit De Morgan\textquotesingle{}scher Regel aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Es ist nicht der Fall, dass p und es ist nicht der Fall, dass q.}
+  \CommentTok{// ¬p∧¬q}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\NormalTok{ Es ist nicht der Fall, dass p und es ist nicht der Fall, dass q.}
+  \CommentTok{// ¬p∧¬q}
+\WarningTok{{-}{-} mit De Morgan\textquotesingle{}scher Regel aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Es ist nicht der Fall, dass p oder q.}
+  \CommentTok{// ¬(p∨q)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Transitivität
+(Kettenregel)}\label{transitivituxe4t-kettenregel}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Transitivität\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Wenn p, dann q.}
+\ErrorTok{(2)}\NormalTok{ Wenn q, dann r.}
+\WarningTok{{-}{-} aus 1,2 mit Transitivität {-}{-}}
+\ErrorTok{(3)}\FloatTok{ *Also*:}\NormalTok{ Wenn p, dann r.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Annahmen um des Arguments
+willen}\label{annahmen-um-des-arguments-willen}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Annahmen um des Arguments willen}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Sätze, die im Laufe einer Begründung hypothetisch unterstellt werden,
+von deren Wahrheit aber nicht die Wahrheit der Konklusion abhängt,
+heißen ``Annahmen um des Arguments willen''
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\begin{itemize}
+\tightlist
+\item
+  Annahmen um des Arguments willen sind \textbf{keine Prämissen}! Sie
+  müssen als Annahmen um des Arguments willen gekennzeichnet werden.
+\item
+  Aus Annahmen um des Arguments willen können -- wie aus Prämissen und
+  Zwischenkonklusionen -- unter Anwendung der Schlussregeln
+  Zwischenkonklusionen gezogen werden.
+\item
+  Alle Schlussschritte, in denen Annahmen um des Arguments willen oder
+  aber aus diesen bereits gefolgerte Zwischenkonklusionen verwendet
+  werden, müssen mit der Nummer der jeweiligen Annahme um des Arguments
+  willen gekennzeichnet werden.
+\end{itemize}
+
+\end{tcolorbox}
+
+\paragraph{Annahmebeseitigung}\label{annahmebeseitigung}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\FloatTok{ *Annahme um des Arguments willen:* }\NormalTok{p}
+\NormalTok{   ...}
+\WarningTok{{-}{-} folgt mit ... aus ... (hängt ab von 1) {-}{-}}
+\NormalTok{(n) q}
+\WarningTok{{-}{-} folgt aus 1, n mit Annahmebeseitigung {-}{-}}
+\NormalTok{(n+1) Wenn p, dann q.}
+\end{Highlighting}
+\end{Shaded}
+
+\paragraph{Annahmewiderlegung (reductio ad
+absurdum)}\label{annahmewiderlegung-reductio-ad-absurdum}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\FloatTok{ *Annahme um des Arguments willen:* }\NormalTok{p}
+\NormalTok{   ...}
+\WarningTok{{-}{-} folgt mit ... aus ... (hängt ab von 1) {-}{-}}
+\NormalTok{(n) q und es ist nicht der Fall, dass q.}
+\WarningTok{{-}{-} folgt aus 1,n mit Annahmewiderlegung {-}{-}}
+\NormalTok{(n+1) Es ist nicht der Fall, dass p.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Allspezialisierung}\label{allspezialisierung}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Allspezialisierung\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Für alle x gilt: x ist F.}
+\WarningTok{{-}{-} mit Allspez. aus 1 {-}{-}}
+\ErrorTok{(2)}\NormalTok{ Also: Für den Einzelgegenstand a gilt F.}
+\end{Highlighting}
+\end{Shaded}
+
+Oder:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Allspezialisierung\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Für alle x gilt: Wenn x F ist, ist x auch G.}
+\WarningTok{{-}{-} mit Allspez. aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Für den Einzelgegenstand a gilt: Ist a F,}
+\NormalTok{    ist a auch G.}
+\end{Highlighting}
+\end{Shaded}
+
+Schematisch angedeutet in einer ganz allgemeinen Form:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AlertTok{\textless{}Argumentschema Allspezialisierung\textgreater{}}
+
+\ErrorTok{(1)}\NormalTok{ Für alle x gilt: ... x ... .}
+\WarningTok{{-}{-} mit Allspez. aus 1 {-}{-}}
+\ErrorTok{(2)}\FloatTok{ *Also*:}\NormalTok{ Für den Einzelgegenstand a gilt: ... a ... .}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Analogieargumente}\label{analogieargumente}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\NormalTok{ Gegenstände X verhalten sich in Bezug auf den Aspekt Z* genauso wie}
+\NormalTok{    Gegenstände Y in Bezug auf den Aspekt Z.}
+\ErrorTok{(2)}\NormalTok{ Auf Gegenstände Y trifft hinsichtlich Z S zu.}
+\ErrorTok{(3)}\NormalTok{ Der Sachverhalt S* hinsichtlich Z* entspricht dem Sachverhalt S }
+\NormalTok{    hinsichtlich Z.}
+\ErrorTok{(4)}\FloatTok{ *Analogieprinzip:* }\NormalTok{Gilt}
+\NormalTok{      (i) Gegenstände X verhalten sich in Bezug auf den Aspekt Z* genauso wie}
+\NormalTok{      Gegenstände Y in Bezug auf den Aspekt Z}
+\NormalTok{      (ii) Auf Gegenstände Y trifft hinsichtlich Z S zu}
+\NormalTok{      (iii) Der Sachverhalt S* hinsichtlich Z* entspricht dem Sachverhalt S }
+\NormalTok{      hinsichtlich Z}
+\NormalTok{    dann gilt auch: Auf Gegenstände X trifft S* zu.}
+\WarningTok{{-}{-} aus 1{-}4 mit Allspezialisierung, KE und MP {-}{-}}
+\ErrorTok{(5)}\FloatTok{ *Also:* }\NormalTok{Auf Gegenstände X trifft S* zu.}
+\end{Highlighting}
+\end{Shaded}
+
+Für eine Instantiierung dieses Schemas (also der Formulierung eines
+konkreten Analogieargument) müssen Sie für die Prämissen 1-3 und die
+Konklusion konkrete Inhalte angeben. Das allgemeine Prinzip (Prämisse 4)
+bleibt so stehen (und wird über die Allspezialisierung auf die konkrete
+Analogie angewendet).
+
+\subsubsection{Argumentschema: Schluss auf die beste
+Erklärung}\label{argumentschema-schluss-auf-die-beste-erkluxe4rung}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ErrorTok{(1)}\NormalTok{ p}
+\ErrorTok{(2)}\NormalTok{ Die Annahme, dass q, ist die beste Erklärung für p.}
+\WarningTok{{-}{-} aus 1,2 mit dem Schluss auf die beste Erklärung {-}{-}}
+\ErrorTok{(3)}\NormalTok{ q}
+\end{Highlighting}
+\end{Shaded}
+
+
+
+
+
+\end{document}

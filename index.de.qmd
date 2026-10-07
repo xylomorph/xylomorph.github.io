@@ -1,0 +1,36 @@
+---
+title: "Sebastian Cacean"
+subtitle: "Argumentationstheorie · KI · Lehre"
+image: ./assets/images/profile.jpg
+about:
+  template: solana
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+  links:
+    - icon: linkedin
+      href: https://www.linkedin.com/in/sebastian-cacean/
+    - icon: github
+      href: https://github.com/xylomorph
+    - text: "{{< ai academia >}}"
+      href: https://kit.academia.edu/SebastianCacean
+    - text : "{{< ai researchgate >}}"
+      href: https://www.researchgate.net/profile/Sebastian-Cacean-2
+    - text: "{{< ai philpapers >}}"
+      href: https://philpeople.org/profiles/sebastian-cacean
+format: 
+  html: 
+    page-layout: full
+---
+
+
+::: {#hero-heading}
+
+Ich bin Philosoph und Dozent mit Schwerpunkten in der Argumentationstheorie und der angewandten Ethik. In meiner **Forschung** nutze ich Methoden aus der Argumentationstheorie und der Inhaltsanalyse, um Argumente und ihre Zusammenhänge besser zu verstehen. Das Spektrum der mich interessierenden Debatten reicht von philosophischen Fachdebatten bis hin zu gesellschaftsrelevanten Debatten des öffentlichen Diskurses. Auch in meiner **Lehrtätigkeit** spielen analytische Methoden aus der Argumentationstheorie und Logik eine zentrale Rolle. Darüber hinaus interessiere ich mich für die Potenziale großer Sprachmodelle (LLMs) zur Identifikation, Rekonstruktion und Analyse von Argumenten.
+
+[Mehr zu mir &rarr;](about.html){.about-links .subtitle}
+
+:::
+
+
+

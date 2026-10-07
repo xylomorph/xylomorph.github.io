@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@argdown/cli": "^2.0.0",
+    "@argdown/image-export": "^2.0.1",
+    "@argdown/pandoc-filter": "^2.0.1"
+  }
+}

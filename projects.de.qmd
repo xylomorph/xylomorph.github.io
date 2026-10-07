@@ -1,0 +1,21 @@
+---
+title: "Projekte"
+author: "Sebastian Cacean"
+comments: false
+citation: false
+description: |
+  Dieses Portfolio enthält Arbeiten, Anwendungen und Tools, an denen ich mitgewirkt oder die ich entwickelt habe, <br>sowie damit verbundene und von mir erstellte frei zugängliche Lehrmaterialien.
+listing: 
+  contents:
+    - projects
+  type: grid
+  fields: [title, subtitle, description, categories, date, image]
+  sort: "date-modified desc"
+  filter-ui: false
+  # image-align: left
+  # image-height: 100%
+format: 
+  html: 
+    page-layout: full
+title-block-banner: false
+---

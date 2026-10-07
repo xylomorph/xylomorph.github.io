@@ -1,0 +1,115 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{graphicx}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds}
+
+\begin{document}
+\begin{tikzpicture}[
+  >=Latex,
+  font=\sffamily,
+  line cap=round,
+  line join=round
+]
+
+% Color palette
+\definecolor{mdblue}{HTML}{2D73D5}
+\definecolor{argcyan}{HTML}{579EBC}
+\definecolor{quartogold}{HTML}{D98E04}
+\definecolor{pdfred}{HTML}{D64545}
+\definecolor{softbg}{HTML}{F7F8FA}
+\definecolor{linegray}{HTML}{6B7280}
+\definecolor{lightgray}{HTML}{E5E7EB}
+\definecolor{boxbg}{HTML}{F3F4F6}
+
+% % Background panel
+% \node[
+%   rounded corners=14pt,
+%   fill=softbg,
+%   minimum width=15.5cm,
+%   minimum height=8.2cm,
+%   blur shadow={shadow blur steps=5}
+% ] (panel) at (0,0) {};
+
+% Input cards
+\node[
+  rounded corners=10pt,
+  fill=boxbg,
+  draw=lightgray,
+  line width=0.9pt,
+  minimum width=3.8cm,
+  minimum height=2.6cm
+] (mdcard) at (-4.8,-1.9) {};
+
+\node[
+  rounded corners=10pt,
+  fill=boxbg,
+  draw=lightgray,
+  line width=0.9pt,
+  minimum width=3.8cm,
+  minimum height=2.6cm
+] (argcard) at (-4.8,+1.9) {};
+
+\node[anchor=center] at ($(mdcard.center)+(0,0.35)$)
+  {\includegraphics[width=1.2cm]{markdown-logo.png}};
+\node[text=linegray,font=\small,align=center] at ($(mdcard.center)+(0,-0.72)$)
+  {Document \& Explain\\in Markdown};
+
+\node[anchor=center] at ($(argcard.center)+(0,0.35)$)
+  {\includegraphics[width=1.2cm]{argdown-mark-blue.png}};
+\node[text=linegray,font=\small,align=center] at ($(argcard.center)+(0,-0.72)$)
+  {Analyse in Argdown};
+
+% Processor node
+\node[
+  rounded corners=14pt,
+  fill=boxbg,
+  draw=lightgray,
+  line width=1pt,
+  minimum width=4.6cm,
+  minimum height=3.5cm
+] (engine) at (1,0) {};
+
+\node[text=mdblue,font=\bfseries\Large] at ($(engine.center)+(0,0.55)$) {Quarto};
+\node[text=linegray,font=\small,align=center] at ($(engine.center)+(0,-0.55)$)
+  {Render \& Publish\\with Quarto};
+
+% Output card
+\node[
+  rounded corners=12pt,
+  fill=boxbg,
+  draw=lightgray,
+  line width=1pt,
+  minimum width=4.2cm,
+  minimum height=4.0cm
+] (pdfcard) at (7.5,0) {};
+
+\node at ($(pdfcard.center)+(0,0.65)$)
+  {\includegraphics[width=1.45cm]{pdf-icon.png}};
+\node[text=pdfred!85!black,font=\bfseries] at ($(pdfcard.center)+(-0.02,-0.55)$)
+  {Polished PDF};
+\node[text=linegray,font=\footnotesize,align=center] at ($(pdfcard.center)+(-0.02,-1.25)$)
+  {with Text,\\Argument Maps \&\\Argument Reconstructions};
+
+% Merge cue and flow to processor
+\node[
+  circle,
+  fill=white,
+  draw=none,
+  minimum size=11mm,
+] (mergeplus) at (-4.8,0) {};
+
+\draw[line width=1.4pt,linegray!90!black]
+  ($(mergeplus.center)+(-2.2mm,0)$) -- ($(mergeplus.center)+(2.2mm,0)$);
+\draw[line width=1.4pt,linegray!90!black]
+  ($(mergeplus.center)+(0,-2.2mm)$) -- ($(mergeplus.center)+(0,2.2mm)$);
+
+\draw[->,line width=2.3pt,linegray!90!black]
+  ($(mergeplus.east)+(1.4,0)$) -- ($(engine.west)+(-0.05,0)$);
+\draw[->,line width=2pt,linegray!90!black]
+  ($(engine.east)+(0.05,0)$) -- ($(pdfcard.west)+(-0.05,0)$);
+
+% Caption-like footer inside panel
+% \node[text=linegray,font=\footnotesize,align=center] at (0,-3.35)
+%   {Workflow concept: combine structured argument analysis with narrative Markdown to produce publication-ready PDFs.};
+
+\end{tikzpicture}
+\end{document}

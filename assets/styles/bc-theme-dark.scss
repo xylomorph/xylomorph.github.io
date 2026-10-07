@@ -1,0 +1,748 @@
+/*-- scss:defaults --*/
+
+// Quarto references:
+// Variables: https://github.com/quarto-dev/quarto-cli/src/resources/formats/html/bootstrap/_bootstrap-variables.scss
+// Rules: https://github.com/quarto-dev/quarto-cli/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
+
+// Import color variables
+@import "colors-dark.scss";
+
+// Primary Quarto/Bootstrap color variables
+$primary:                 $bc-text-title;
+$secondary:               $bc-link-primary;
+$body-color:              $bc-text-primary;
+$body-bg:                 $bc-bg-primary;
+$body-secondary:          lighten($bc-text-primary, 10%);
+
+// Links
+$link-color:              $bc-link-primary;
+$link-decoration:         none;
+$link-hover-color:        $bc-link-hover;
+$link-hover-decoration:   underline;
+
+// Typography
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:  InterVariable, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:        $font-family-sans-serif;
+$headings-font-family:    $font-family-sans-serif;
+$headings-font-weight:    800;
+$headings-color:          $bc-text-title;
+
+// Code
+$code-color:              $bc-text-title;
+$code-bg:                 $bc-bg-secondary;
+
+// Code blocks
+$code-block-bg:           $bc-bg-secondary;
+$code-block-border-left:  3px solid $bc-bg-accent;
+
+// Borders
+$border-color:            $bc-border-color;
+$hr-border-color:         $bc-border-color;
+
+// Border radius
+$border-radius:           12px;
+$border-radius-sm:        5px;
+$border-radius-lg:        12px;
+
+// Table of contents
+$toc-color:               $link-color;
+$toc-active-border:       $toc-color;
+$toc-inactive-border:     darken($toc-color, 20%);
+
+// Navbar
+$navbar-bg:                    $bc-bg-primary;
+$navbar-fg:                    $bc-link-primary;
+$navbar-dark-bg:               $bc-bg-primary;
+$navbar-dark-color:            $bc-text-primary;
+$navbar-dark-hover-color:      $bc-text-title;
+$navbar-dark-active-color:     $bc-text-title;
+$navbar-dark-brand-color:      $bc-text-primary;
+$navbar-dark-brand-hover-color: $bc-text-title;
+
+// Footer
+$footer-fg:               $bc-text-primary;
+$footer-bg:               $bc-bg-primary;
+
+/*-- scss:rules --*/
+
+// Links with bottom border on hover
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    border-bottom: 2px solid $bc-link-hover;
+    text-decoration: none;
+  }
+}
+
+// Horizontal rules
+hr {
+  border: none;
+  border-bottom: 2px solid $bc-border-color;
+}
+
+// Code blocks
+div.sourceCode {
+  background-color: $code-block-bg;
+  border-left: $code-block-border-left;
+  border-radius: $border-radius-sm;
+  padding: 0.5em;
+}
+
+// Argdown source view inside web component slots
+figure.argdown-figure,
+figure.argdown-figure > argdown-map,
+figure.argdown-figure > argdown-map > div[slot="source"] {
+  background-color: $code-block-bg !important;
+  border-radius: $border-radius-sm;
+}
+
+figure.argdown-figure pre.language-argdown,
+figure.argdown-figure pre.language-argdown code.language-argdown {
+  background-color: $code-block-bg !important;
+  color: $code-color !important;
+  border-left: $code-block-border-left;
+  border-radius: $border-radius-sm;
+}
+
+figure.argdown-figure pre.language-argdown {
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0.75em;
+}
+
+// Argdown syntax colors in dark mode
+// Token classes observed in rendered Argdown source:
+// hljs-argument-statement-nr, hljs-argument-title, hljs-comment,
+// hljs-emphasis, hljs-inference, hljs-tag
+figure.argdown-figure pre.language-argdown .hljs-argument-statement-nr {
+  color: lighten($bc-text-primary, 14%) !important;
+}
+
+figure.argdown-figure pre.language-argdown .hljs-argument-title {
+  color: lighten($bc-link-primary, 22%) !important;
+}
+
+figure.argdown-figure pre.language-argdown .hljs-comment {
+  color: lighten($bc-text-primary, 8%) !important;
+}
+
+figure.argdown-figure pre.language-argdown .hljs-emphasis {
+  color: $bc-text-title !important;
+}
+
+figure.argdown-figure pre.language-argdown .hljs-inference {
+  color: #f59e0b !important;
+}
+
+figure.argdown-figure pre.language-argdown .hljs-tag {
+  color: #22c55e !important;
+}
+
+// Inline code
+p code:not(.sourceCode),
+li code:not(.sourceCode),
+td code:not(.sourceCode) {
+  background-color: $code-bg;
+  color: $code-color;
+  padding: 0.2em 0.4em;
+  border-radius: $border-radius-sm;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 5px solid $bc-link-primary;
+  background-color: $bc-bg-secondary;
+  padding: 0.8em 1em;
+  margin-left: 0;
+  margin-right: 0;
+  color: $bc-text-primary;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+// Tables
+table {
+  border-collapse: collapse;
+  
+  td, th {
+    border-bottom: 1px solid $bc-border-color;
+    padding: 0.5em;
+  }
+}
+
+// Navbar
+// Override default link hover for navbar items
+.navbar-nav .nav-link {
+  padding: 6px 8px;
+  border-radius: $border-radius-sm;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  
+  &:hover, &:focus {
+    background-color: $bc-bg-secondary;
+    color: $bc-text-title;
+    border-bottom: none;
+  }
+}
+
+// Navbar brand/logo
+.navbar-brand {
+  padding: 6px 8px;
+  border-radius: $border-radius-sm;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  
+  // Hide navbar title text (name is in logo)
+  .navbar-title {
+    display: none !important;
+  }
+  
+  // Make logo bigger and colorize to match navbar links
+  img {
+    height: 60px !important;
+    max-height: 60px !important;
+    transition: filter 0.2s ease;
+    // Use filter to colorize SVG to link color (cyan)
+    filter: brightness(0) saturate(100%) invert(54%) sepia(37%) saturate(1736%) hue-rotate(149deg) brightness(93%) contrast(93%);
+  }
+  
+  &:hover, &:focus {
+    background-color: $bc-bg-secondary;
+    color: $bc-text-title;
+    border-bottom: none;
+    
+    img {
+      // Change to title color on hover (near-white)
+      filter: brightness(0) saturate(100%) invert(96%) sepia(4%) saturate(168%) hue-rotate(202deg) brightness(103%) contrast(95%);
+    }
+  }
+}
+
+// BabelQuarto language button
+// Override Bootstrap's data-bs-theme="dark" on navbar and all dropdown-toggle styles
+.navbar-nav .dropdown-toggle.babelquarto-languages-button.btn-primary,
+.navbar .dropdown-toggle#languages-button,
+.navbar [data-bs-theme="dark"] .dropdown-toggle#languages-button,
+.navbar [data-bs-theme="dark"] .dropdown-toggle.babelquarto-languages-button,
+[data-bs-theme="dark"] .dropdown-toggle#languages-button,
+[data-bs-theme="dark"] .dropdown-toggle.babelquarto-languages-button.btn-primary,
+.dropdown-toggle#languages-button.babelquarto-languages-button.btn.btn-primary,
+#languages-button.babelquarto-languages-button.btn-primary {
+  --bs-btn-bg: #{$bc-bg-secondary} !important;
+  --bs-btn-color: #{$bc-text-primary} !important;
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-hover-bg: #{$bc-bg-primary} !important;
+  --bs-btn-hover-color: #{$bc-text-title} !important;
+  --bs-btn-hover-border-color: transparent !important;
+  --bs-btn-active-bg: #{$bc-bg-primary} !important;
+  --bs-btn-active-color: #{$bc-text-title} !important;
+  --bs-btn-active-border-color: transparent !important;
+  
+  padding: 6px 8px !important;
+  border-radius: $border-radius-sm !important;
+  background-color: $bc-bg-secondary !important;
+  border: none !important;
+  color: $bc-text-primary !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  box-shadow: none !important;
+  
+  // Icon color
+  i, .bi {
+    color: $bc-text-primary !important;
+  }
+  
+  &:hover, &:focus, &:focus-visible {
+    background-color: $bc-bg-primary !important;
+    color: $bc-text-title !important;
+    border-bottom: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    
+    i, .bi {
+      color: $bc-text-title !important;
+    }
+  }
+  
+  &:active, &.show {
+    background-color: $bc-bg-primary !important;
+    color: $bc-text-title !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+    i, .bi {
+      color: $bc-text-title !important;
+    }
+  }
+}
+
+// Buttons
+.btn-primary {
+  background-color: $bc-link-primary;
+  color: $bc-text-title;
+  border-radius: $border-radius-sm;
+  
+  &:hover {
+    background-color: lighten($bc-link-primary, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: $bc-link-primary;
+  border: 1px solid $bc-link-primary;
+  border-radius: $border-radius-sm;
+  
+  &:hover {
+    background-color: $bc-link-primary;
+    color: $bc-text-title;
+  }
+}
+
+// Title block metadata row: keep author/date/share on one row on larger screens
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin-top: 0.75rem;
+
+  > div {
+    min-width: 0;
+  }
+
+  .quarto-title-meta-heading {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $bc-text-secondary;
+    margin-bottom: 0.25rem;
+  }
+
+  .quarto-title-meta-contents {
+    min-width: 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Title block link buttons (styled like navbar links)
+.title-block-link {
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: $border-radius-sm;
+  color: $bc-link-primary;
+  border: 1px solid $bc-link-primary;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  
+  &:hover, &:focus {
+    background-color: $bc-bg-secondary;
+    color: $bc-text-title;
+    border-bottom: 1px solid $bc-link-primary;
+    text-decoration: none;
+  }
+}
+
+.title-block-share-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  padding: 0;
+  border-radius: $border-radius-sm;
+  color: $bc-link-primary;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover, &:focus {
+    background-color: $bc-bg-secondary;
+    color: $bc-link-primary;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #title-block-header.quarto-title-block.default .quarto-title-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Override Bootstrap's .btn-primary after it's defined
+// This must come AFTER the button definitions above
+button.btn.btn-primary.dropdown-toggle.babelquarto-languages-button#languages-button,
+.navbar-nav .dropdown-toggle.babelquarto-languages-button.btn-primary,
+.navbar .dropdown-toggle#languages-button,
+button#languages-button {
+  // Kill Bootstrap gradients
+  background-image: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  
+  // Set our colors - use link color for text
+  background-color: $bc-bg-primary !important;
+  border: none !important;
+  border-color: transparent !important;
+  color: $bc-link-primary !important;
+  padding: 6px 8px !important;
+  border-radius: $border-radius-sm !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  box-shadow: none !important;
+  
+  // Icon color
+  i, .bi {
+    color: $bc-link-primary !important;
+  }
+  
+  &:hover, &:focus, &:focus-visible {
+    background-image: none !important;
+    background-color: $bc-bg-secondary !important;
+    color: $bc-text-title !important;
+    border-bottom: none !important;
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-shadow: none !important;
+    
+    i, .bi {
+      color: $bc-text-title !important;
+    }
+  }
+  
+  &:active, &.show, &:not(.disabled):hover {
+    background-image: none !important;
+    background-color: $bc-bg-secondary !important;
+    color: $bc-text-title !important;
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    
+    i, .bi {
+      color: $bc-text-title !important;
+    }
+  }
+}
+
+// Narrow dropdown menu for language selection
+#languages-links.dropdown-menu {
+  min-width: auto !important;
+  width: auto !important;
+  padding: 0.25rem 0 !important;
+}
+
+// Remove underline on hover for language dropdown links
+#languages-links.dropdown-menu a,
+.dropdown-item {
+  &:hover, &:focus {
+    border-bottom: none !important;
+  }
+}
+
+// Remove underline on hover for TOC and sidebar links
+#TOC .nav-link,
+.toc-action,
+.sidebar-link,
+.sidebar nav a {
+  &:hover, &:focus {
+    border-bottom: none !important;
+  }
+}
+
+// About page social links - style similar to navbar social links
+.about-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: $border-radius-sm;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-size: 1.6rem;
+  border: none !important;
+  flex-shrink: 0;
+  
+  i, .bi, .ai {
+    color: $bc-link-primary;
+    font-size: 1.5rem;
+  }
+  
+  &:hover, &:focus {
+    background-color: $bc-bg-accent;
+    color: $bc-text-title;
+    border-bottom: none !important;
+    
+    i, .bi, .ai {
+      color: $bc-text-title;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Responsive adjustments for social links
+@media (max-width: 992px) {
+  .about-links {
+    gap: 0.35rem;
+    flex-direction: row !important;
+  }
+  
+  .about-link {
+    padding: 7px 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-links {
+    gap: 0.25rem;
+    flex-direction: row !important;
+  }
+  
+  .about-link {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-links {
+    gap: 0.15rem;
+    flex-direction: row !important;
+  }
+  
+  .about-link {
+    padding: 4px 6px;
+  }
+}
+
+// About page hero section background
+.about-entity {
+  background-color: $bc-bg-accent;
+  border-radius: $border-radius;
+  padding: 2rem;  border-right: none !important;
+}
+
+// Remove separator line in trestles template
+.quarto-about-trestles .about-entity {
+  border-right: none !important;
+}
+
+.quarto-about-trestles .about-contents {
+  border-left: none !important;
+}
+
+// Solana template (landing page) - different styling from trestles (about page)
+.quarto-about-solana .about-entity {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: 1fr 4fr !important;
+  gap: 3rem !important;
+  align-items: center !important;  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;}
+
+// Right-align all content in the first column (title, subtitle, links, text)
+.quarto-about-solana .about-entity .entity-contents {
+  text-align: right !important;
+}
+
+.quarto-about-solana .about-entity .about-contents {
+  text-align: right !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// Right-align the title and subtitle
+.quarto-about-solana .quarto-title,
+.quarto-about-solana header {
+  text-align: right !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.quarto-about-solana .quarto-title h1.title,
+.quarto-about-solana .quarto-title .subtitle {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.quarto-about-solana .quarto-title-meta {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// Right-align and justify social links to the right
+.quarto-about-solana .about-links {
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 0.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-wrap: wrap !important;
+}
+
+// Responsive adjustments for solana template social links
+@media (max-width: 992px) {
+  .quarto-about-solana .about-links {
+    gap: 0.35rem !important;
+    flex-direction: row !important;
+  }
+  
+  .quarto-about-solana .about-link {
+    padding: 7px 9px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .quarto-about-solana .about-links {
+    gap: 0.25rem !important;
+    flex-direction: row !important;
+  }
+  
+  .quarto-about-solana .about-link {
+    padding: 6px 8px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .quarto-about-solana .about-links {
+    gap: 0.15rem !important;
+    flex-direction: row !important;
+  }
+  
+  .quarto-about-solana .about-link {
+    padding: 4px 6px !important;
+  }
+}
+
+// Ensure paragraph text aligns with everything else
+.quarto-about-solana .about-contents p {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+// Style the "Learn more" link like navbar buttons
+.quarto-about-solana a.about-links.subtitle {
+  display: inline-block !important;
+  padding: 6px 8px !important;
+  border-radius: $border-radius-sm !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  text-decoration: none !important;
+  
+  &:hover, &:focus {
+    background-color: $bc-bg-secondary !important;
+    color: $bc-link-hover !important;
+    border-bottom: none !important;
+  }
+}
+
+// Center the image vertically (already handled by grid align-items)
+.quarto-about-solana img.about-image {
+  display: block !important;
+  margin: auto !important;
+}
+
+// Responsive: Switch to vertical layout with centered content on smaller screens
+@media (max-width: 992px) {
+  .quarto-about-solana .about-entity {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .about-entity .entity-contents {
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .about-entity .about-contents {
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .quarto-title,
+  .quarto-about-solana header {
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .about-links {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .quarto-about-solana .about-entity {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .about-entity .entity-contents {
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .about-entity .about-contents {
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .quarto-title,
+  .quarto-about-solana header {
+    text-align: center !important;
+  }
+  
+  .quarto-about-solana .about-links {
+    justify-content: center !important;
+  }
+}
+
+// Footer social links - style similar to navbar items
+.nav-footer-center a,
+.page-footer a[href*="linkedin"],
+.page-footer a[href*="github"],
+.page-footer a[href*="academia"],
+.page-footer a[href*="researchgate"],
+.page-footer a[href*="philpeople"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: $border-radius-sm;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin: 0 0.25rem;
+  
+  i, .bi, .fa, .ai {
+    font-size: 1.5rem !important;
+    color: $bc-link-primary;
+    transition: color 0.2s ease;
+  }
+  
+  &:hover, &:focus {
+    background-color: $bc-bg-secondary;
+    color: $bc-text-title;
+    border-bottom: none !important;
+    
+    i, .bi, .fa, .ai {
+      color: $bc-text-title;
+    }
+  }
+}
