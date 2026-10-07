@@ -32,10 +32,10 @@ website:
       &#169; 2024 Sebastian Cacean &#8729; Made with [Quarto](https://quarto.org)
     center: |
       <a href="https://www.linkedin.com/in/sebastian-cacean/" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
-      <a href="https://github.com/xylomorph" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
-      <a href="https://kit.academia.edu/SebastianCacean" title="github" target="_blank" rel="noopener">{{< ai academia >}}</a>
-      <a href="https://www.researchgate.net/profile/Sebastian-Cacean-2" title="github" target="_blank" rel="noopener">{{< ai researchgate >}}</a>
-      <a href="https://philpeople.org/profiles/sebastian-cacean" title="github" target="_blank" rel="noopener">{{< ai philpapers >}}</a>
+      <a href="https://github.com/xylomorph" title="GitHub" target="_blank" rel="noopener">{{< fa brands github >}}</a>
+      <a href="https://kit.academia.edu/SebastianCacean" title="Academia" target="_blank" rel="noopener">{{< ai academia >}}</a>
+      <a href="https://www.researchgate.net/profile/Sebastian-Cacean-2" title="ResearchGate" target="_blank" rel="noopener">{{< ai researchgate >}}</a>
+      <a href="https://philpeople.org/profiles/sebastian-cacean" title="PhilPeople" target="_blank" rel="noopener">{{< ai philpapers >}}</a>
     right: 
       - text: "Imprint"
         aria-label: "Imprint Information"
