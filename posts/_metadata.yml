@@ -18,6 +18,16 @@ format:
     template-partials: 
       - ../assets/partials/title-block.html
       - ../assets/partials/banner/title-block.html
+  # comments with Giscus
+    comments:
+      giscus:
+        repo: xylomorph/xylomorph.github.io
+        category: Announcements
+        reactions-enabled: true
+        theme:
+          light: light # giscus theme used for light website theme
+          dark: dark_dimmed # giscus theme used for dark website theme
+
   pdf:
     documentclass: article
     papersize: a4
@@ -46,3 +56,13 @@ twitter-card:
 open-graph:
   image: featured.png
 
+# website:
+#   # comments with Giscus
+#   comments:
+#     giscus:
+#       repo: xylomorph/xylomorph.github.io
+#       category: Announcements
+#       reactions-enabled: true
+#       theme:
+#         light: light # giscus theme used for light website theme
+#         dark: dark_dimmed # giscus theme used for dark website theme
