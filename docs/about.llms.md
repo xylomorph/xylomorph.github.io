@@ -1,0 +1,90 @@
+![](./assets/images/profile.jpg)
+
+# Sebastian Cacean
+
+Argumentation Theory · AI · Education
+
+[ ](https://www.linkedin.com/in/sebastian-cacean/) [ ](https://github.com/xylomorph) [](https://kit.academia.edu/SebastianCacean) [](https://www.researchgate.net/profile/Sebastian-Cacean-2) [](https://philpeople.org/profiles/sebastian-cacean)
+
+## Thanks for stopping by!
+
+I work as researcher at the Heinrich-Heine-Universität Düsseldorf and have a background in philosophy and natural sciences. My research interests include argumentation theory, content analysis, applied ethics, formal epistemology and philosophy of science.
+
+- Ph.D. in Philosophy ∙ Karlsruhe Institute of Technology ∙ 2024
+- Master Diploma in Physics ∙ Freie Universität Berlin ∙ 2010
+- 🔊
+  Pronouncing ‘Cacean’: “ka-CHAN” \| /kaˈtʃan/
+
+## About Me
+
+I am a philosopher and argumentation theorist interested in how arguments work in natural language. I use methods from argumentation theory to analyse argumentative texts, from philosophical writing to public discourse. I am also passionate about teaching analytical methods for understanding and analysing argumentation.
+
+Recently, I have become more interested in how large language models (LLMs) can assist this kind of analysis. I explore how LLMs can identify, reconstruct, and analyse arguments and—more broadly, how they can support research and teaching in argumentation.
+
+## Current Affiliations
+
+- Academic teaching project [***“Kontroversen begleiten mit Argumentlandkarten”***](https://kobekarten.github.io/) (*Supporting Debates with Argument Maps*) at the Heinrich-Heine-Universität Düsseldorf: This project develops teaching materials and pedagogical concepts to help students engage constructively with controversial issues. Using argument mapping, students learn to analyse, visualise, and iteratively refine complex debates, and to contribute these representations productively to dialogue and decision-making processes. The project also creates open educational resources and explores their use across disciplinary courses as well as in participatory public engagement formats.
+
+## Past Affiliations
+
+- **2024 – 2025:** Research project [***KIdeKu***](https://compphil2mmae.github.io/research/kideku/) (*Prospects of using AI to improve deliberative culture*): How can we use large language models (LLMs) to improve deliberative culture in democratic societies? In the research project *KIdeKu*, we collaborated with NGOs to design novel scenarios for using LLMs and explored them by implementing prototypes and demo apps.
+- **2020 – 2023:** Research project [***“Formal Models of Reflective Equilibrium - How Far Does Reflective Equilibrium Take Us?”***](https://re-models.github.io/): In this project, we explored the method of RE by using a formal model, which we implemented in Python ([external link](https://github.com/re-models/rethon)). We simulated RE processes and analysed the model runs to assess expectations invested in, and objections raised against RE.
+- **2019 – 2021:** Research project [***Leadership Ethics as Ethics in the Sciences and Humanities***](https://uni-tuebingen.de/forschung/zentren-und-institute/internationales-zentrum-fuer-ethik-in-den-wissenschaften/das-izew/archiv/abgeschlossene-projekte/projektseiten/fuehrungsethik-als-ethik-in-den-wissenschaften/): In this project, we conceptualised learning and teaching formats of leadership ethics dedicated to Master’s and doctoral students of technical disciplines (natural sciences, technology, engineering, and mathematics). During the project, we implemented our ideas within several seminars and evaluated them to improve our teaching concept.
+- **2017 – 2019:** Research project [***Buedeka***](https://www.wmk.itz.kit.edu/2950.php) (*Citizen Delphi Germline Gene Editing*): In this participatory project, we conducted a Delphi-based participation with citizens about the ethical aspects of germline gene editing. The resulting report of the citizens’ assembly formulates recommendations for regulating germline gene editing aimed at policymakers.
+- **2010 – 2016:** Shared Research Group [***Limits and Objectivity of Scientific Foreknowledge: The Case of Energy Outlooks***](https://srg-lobster.philosophie.kit.edu/): The research group has addressed the reliability of scientific policy advice from a general, methodological point of view, with a particular focus on energy predictions and scenarios.
+
+## Research Interests
+
+With my background in natural sciences, I have a preference for analytical philosophy. My research interests include argumentation analysis, (methodology of) content analysis, applied ethics, formal epistemology and philosophy of science.
+
+The challenge of fully comprehending philosophical and other arguments drives my interests. Often, I feel philosophical arguments involve some trickery or magic that I want to unveil. Fortunately, I became acquainted with applied formal logic and argument mapping, which provide precise tools for understanding and evaluating arguments. These tools have become the connecting thread throughout my interests and scientific work.
+
+I am especially intrigued by the following questions:
+
+1.  **Norms of Public Debate and Deliberation:** How should we (as a society) shape public debate and deliberation in general? Which role should deliberation play in our collective decision-making?
+2.  **Measuring Public Debate:** How can we employ argumentation-theoretic tools to understand better what happens in public debate?
+3.  **Argumentation and Large Language Models:** How can we use Large Language Models (LLMs) to analyse and foster public debate?
+
+### Norms of Public Debate and Deliberation
+
+Public debate is the public exchange of divergent views on concrete political issues. It takes place through mass media, social media, democratic institutions, political events, and academic publications, to name a few. The concept of deliberation denotes rational argumentation aimed at collective decision-making. Deliberation is closely connected to the idea of deliberative democracy, in which rational argumentation among citizens plays a central role in democratic self-government. In a deliberative democracy, preference aggregation (in the form of voting) is only one part of collective decision-making. Equally important is a reasonable exchange of arguments and an open-mindedness to revise one’s view in the face of new information and sound arguments.
+
+Both concepts, public debate and deliberation, are connected. Public debate often involves exchanging reasons and arguments and indirectly influences collective decision-making in a democratic society. In other words, public debate is often a form of deliberation. Political decisions can be sound or poor, affecting the well-being of many people across countries and generations. Therefore, we should carefully consider how to shape public debate and deliberation to maximise well-being.
+
+Ideally, participants in public debate discuss their views truthfully and based on facts, respect one another, and are willing to revise their views in light of new evidence. Their discussion should be constructive, reciprocal, and rational. Ideally, everyone can participate equally. While these aspirations are laudable, it is unclear what they require in specific contexts and how to resolve conflicts and tradeoffs between them and other constraints.
+
+Let’s consider political talk shows as a specific example. Talk shows are part of public debate but also belong to an entertainment industry focused on maximising profit. Do the media have obligations to bring talk shows closer to the deliberative ideal? Should the state regulate the media? Who should be invited to political talk shows? Should the full spectrum of public opinions be represented? Should experts have a special role? How should the moderator guide the discussion?
+
+### Measuring Public Debate
+
+Thinking about deliberative norms concerns normative questions—that is, questions about what we ought to do and how to evaluate actions based on moral considerations. Observing and understanding what happens in public debate is a connected but distinct endeavour, as it relates to empirical questions. We could, for instance, analyse the extent to which public debate meets deliberative norms and identify explanations for why our actual practice falls short of ideal deliberation.
+
+Researchers can approach the empirical analysis of public debate from a range of academic disciplines, including sociology, communication studies, psychology, and linguistics. With my background in argumentation theory and argument mapping, I am particularly interested in analysing the argumentative features of public debate. I am, for instance, interested in whether right-wing populism is connected to a specific form of argumentation: Do populists use certain argument types more often than other politicians? Are they prone to fallacies? What kind of argumentative strategies do they employ?
+
+Researchers must use empirical methods to answer such questions. In some sense, they must measure features of public debate. But which measurement instruments are suitable for this purpose? Methods from applied formal and informal logic work well, but were not designed for socio-empirical contexts. As a result, they struggle to meet certain scientific criteria, particularly those related to reproducibility.
+
+One challenge regarding reproducibility is connected to the subjective nature of analysing natural-language argumentation. Argument analysis is an interpretational process. Accordingly, two analysts can reach different conclusions. This hermeneutical underdetermination of argumentation analysis poses a challenge to the use of these methods in socio-empirical contexts. Here’s why: To “measure” features of public debate, we must ensure that divergent results reflect differences in what we measured. Observed differences should indicate differences in the phenomena. However, in the face of hermeneutical underdetermination, divergent results can stem from two sources: differences in the phenomena or analysts’ interpretational choices. In my PhD thesis, I suggested a solution to this problem by advancing a statistical concept of reproducibility for analysing argumentation structure.
+
+### Argumentation and Large Language Models
+
+Since the advance of Chat-GPT, many people have become enthusiastic about the capabilities of large language models (LLMs). Undoubtedly, LLMs will revolutionise how we create and analyse language. They have enormous potential for use in the described normative and empirical contexts. So, how can we employ LLMs to improve and analyse public debate?
+
+*Improving public debate:* Public debate involves text creation. Since LLMs excel at content creation, it follows that LLM-based tools can improve public debate. We could, for instance, think of tools that help citizens better understand others’ arguments or formulate their own. In this way, LLMs could help improve the quality of public debate, increase inclusion and equality of participation or even alleviate the prevailing problems in social media (such as toxic speech and misinformation). The research project [*KIdeKu*](https://compphil2mmae.github.io/research/kideku/) aimed to contribute to this line of employing LLMs.
+
+*Analysing public debate:* Analysing public debate is a daunting task. It involves annotating and categorising text, which is often challenging. Annotators must be extensively trained, and the analysis takes time and effort. Accordingly, such a text analysis does not scale well. If LLMs could be used to perform some of the tasks involved in analysing public debate, the analysis could be applied to larger text corpora without relying on a swarm of annotators.
+
+## Publications
+
+- S. Cacean, *Analysing Argumentation Structures—A Minimalistic Annotation Scheme.* \[<https://doi.org/10.5281/zenodo.22709968>\].
+- S. Cacean, *Chancen von KI zur Stärkung deliberativer Kultur.* Karlsruhe, 2026. \[<https://doi.org/10.5445/IR/1000193096>\].
+- S. Cacean, *Content Analysis of Argumentation Structures - The Role of Reliability in Argument Mapping.* Karlsruhe: KITopen, 2025. \[<https://doi.org/10.5445/IR/1000182475>\].
+- A. Freivogel & S. Cacean, “Assessing a Formal Model of Reflective Equilibrium”, 2024. \[<https://doi.org/10.5281/zenodo.13294165>\]
+- S. Cacean, Reliability of Argument Mapping. *Proceedings of ECA 2019 Groningen*.
+- S. Cacean, *Forschungsbericht Bürgerdelphi Keimbahntherapie*. Karlsruhe, 2019. \[<https://doi.org/10.5445/IR/1000096790>\]
+- S. Cacean, “Die Begründung relevanter Möglichkeiten durch idealisierte Modelle”, in *Die Energiewende und ihre Modelle: Was uns Energieszenarien sagen können - und was nicht*, C. Dieckhoff & A. Leuschner, Hrsg. Bielefeld: transcript, 2016, pp. 46–74.
+- S. Cacean und C. Voigt, “Visualisierung und Analyse von Evidenzen mit Hilfe von Argumentkarten”, *TATuP*, Vol. 22, Nr. 3, pp. 38–45, Nov. 2013. \[<https://doi.org/10.14512/tatup.22.3.38>\]
+- S. Cacean, “Ethische Aspekte von Cognitive Enhancement”, in Sport, *Doping und Enhancement Ergebnisse und Denkanstöße*, G. Spitzer & E. Franke, Hrsg. Köln: Sportverl. Strauß, 2012, pp. 151–220. \[[preprint](https://www.academia.edu/25636493/Ethische_Aspekte_von_Cognitive_Enhancement_Eine_Analyse_mit_Argumentkarten_preprint_version_)\]
+- G. Betz & S. Cacean, *Ethical Aspects of Climate Engineering*. Karlsruhe: KIT Scientific Publishing, 2012. \[<https://doi.org/10.5445/KSP/1000028245>\]
+- G. Betz, S. Cacean et al., “Large-Scale Intentional Interventions into the Climate System? Assessing the Climate Engineering Debate. Scoping report conducted on behalf of the German Federal Ministry of Education and Research (BMBF)”, Kiel Earth Institute, Kiel, 2011. \[[external link](https://www.ifw-kiel.de/publications/large-scale-intentional-intervention-s-into-the-climate-system-assessing-the-climate-engineering-debate-24573/)\]
+
+Back to top

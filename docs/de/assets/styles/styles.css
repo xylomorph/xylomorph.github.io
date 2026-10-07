@@ -1,0 +1,50 @@
+/* css styles */
+
+/* Education list styling */
+#hero-heading ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#hero-heading ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+#hero-heading ul li span {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+.pronunciation-item {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.pronunciation-button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0.1em 0.2em;
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 0.4em;
+  transition: transform 0.15s ease, opacity 0.15s ease, filter 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pronunciation-button:hover,
+.pronunciation-button:focus-visible {
+  transform: scale(1.12);
+  opacity: 0.9;
+  filter: drop-shadow(0 0 0.18em rgba(0, 0, 0, 0.18));
+}

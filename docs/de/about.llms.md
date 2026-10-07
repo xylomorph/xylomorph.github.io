@@ -1,0 +1,90 @@
+![](./assets/images/profile.jpg)
+
+# Sebastian Cacean
+
+Argumentationstheorie · KI · Lehre
+
+[ ](https://www.linkedin.com/in/sebastian-cacean/) [ ](https://github.com/xylomorph) [](https://kit.academia.edu/SebastianCacean) [](https://www.researchgate.net/profile/Sebastian-Cacean-2) [](https://philpeople.org/profiles/sebastian-cacean)
+
+## Danke fürs Vorbeischauen!
+
+Ich bin wissenschaftlicher Mitarbeiter an der Heinrich-Heine-Universität Düsseldorf mit einem Hintergrund in Philosophie und Physik. Zu meinen Forschungsinteressen zählen Argumentationstheorie, Inhaltsanalyse, angewandte Ethik, formale Erkenntnistheorie und Wissenschaftsphilosophie.
+
+- Doktor der Philosophie ∙ Karlsruher Institut für Technologie ∙ 2024
+- Diplom Physik ∙ Freie Universität Berlin ∙ 2010
+- 🔊
+  Aussprache ‘Cacean’: “ka-CHAN” \| /kaˈtʃan/
+
+## Über Mich
+
+Ich bin Philosoph und Argumentationstheoretiker und beschäftige mich mit der Analyse natürlichsprachlicher Argumente. Dazu wende ich Methoden der Argumentationstheorie an, um argumentative Texte detailliert zu analysieren. Das Spektrum der mich interessierenden Debatten reicht von philosophischen Fachdebatten bis hin zu gesellschaftsrelevanten Debatten des öffentlichen Diskurses. In der Hochschullehre gebe ich den nächsten Generationen von Studierenden diese Methoden weiter, um ihre analytischen Fähigkeiten bei der kritischen Auseinandersetzung mit Argumenten zu fördern.
+
+In letzter Zeit interessiere ich mich verstärkt dafür, wie generative KI bei dieser Art von Analyse helfen kann. Ich untersuche, wie Sprachmodelle eingesetzt werden können, um Argumente zu identifizieren und zu rekonstruieren, und damit Forschung und Lehre in der Argumentationsanalyse zu unterstützen.
+
+## Berufliche Laufbahn und Erfahrungen
+
+- **Seit 2026:** Projekt [***“Kontroversen begleiten mit Argumentkarten”***](https://kobekarten.github.io/) an der Heinrich-Heine-Universität Düsseldorf: In diesem Projekt werden Lehrinhalte und Kurskonzepte entwickelt, mit denen Studierende die Methode der Argumentkartierung erlernen, um Kontroversen konstruktiv begleiten zu können. Sie üben sich darin, relevante Argumente und deren Beziehungen zueinander zu analysieren, sie angemessen darzustellen und diese Darstellungen konstruktiv in den weiteren Verständigungs- und Lösungsprozess einzubringen. Dazu werden im Projekt allgemeine und transferierbare Open Educational Resources sowie spezifische Konzepte für deren Einsatz in verschiedenen Lehr- und Lernformaten entwickelt und erprobt.
+
+&nbsp;
+
+- **2024 – 2025:** Forschungsprojekt [***KIdeKu***](https://compphil2mmae.github.io/research/kideku/) (*Prospects of using AI to improve deliberative culture*): Wie können große Sprachmodelle (LLMs) genutzt werden, um Deliberation in der demokratischen Entscheidungsfindung zu stärken? Im Forschungsprojekt *KIdeKu* haben wir gemeinsam mit Nichtregierungsorganisationen neuartige Szenarien für den Einsatz von LLMs entwickelt und durch die Umsetzung von Prototypen und Demo-Apps untersucht.
+- **2020 – 2023:** Forschungsprojekt [***“Formal Models of Reflective Equilibrium - How Far Does Reflective Equilibrium Take Us?”***](https://re-models.github.io/): In diesem Projekt haben wir die Methode des Überlegungsgleichgewichts mit Hilfe eines formalen Modells untersucht, das wir in Python implementiert haben ([externer Link](https://github.com/re-models/rethon)). Durch die Simulation von RE-Prozessen und die quantitative Analyse der resultierenden Modellläufe haben wir untersucht, inwiefern Erwartungen erfüllt werden und ob Einwände gegen die Methode berechtigt sind.
+- **2019 – 2021:** Projekt [***Führungsethik als Ethik in den Wissenschaften***](https://uni-tuebingen.de/forschung/zentren-und-institute/internationales-zentrum-fuer-ethik-in-den-wissenschaften/das-izew/archiv/abgeschlossene-projekte/projektseiten/fuehrungsethik-als-ethik-in-den-wissenschaften/): In diesem Projekt wurden Lern- und Lehrformate zum Thema Führungsethik für Studierende der MINT-Fächer konzipiert. Die entwickelten Lehrkonzepte wurden in mehreren Seminaren umgesetzt und evaluiert.
+- **2017 – 2019:** Beteiligungsprojekt [***Buedeka***](https://www.wmk.itz.kit.edu/2950.php) (*Bürgerdelphi Keimbahntherapie*): Im Rahmen dieses Projekts wurde eine an die [Delphi-Methode](https://de.wikipedia.org/wiki/Delphi-Methode) angelehnte Bürger:innenbeteiligung zu den ethischen Aspekten von Keimbahneingriffen durchgeführt. Der daraus resultierende Bericht der Bürgerversammlung enthält Empfehlungen zur Regulierung von Keimbahneingriffen, die sich an politische Entscheidungsträger:innen richten.
+- **2010 – 2016:** Shared Research Group [***Limits and Objectivity of Scientific Foreknowledge: The Case of Energy Outlooks***](https://srg-lobster.philosophie.kit.edu/): In dieser Forschungsgruppe wurden methodologische Fragen zur Rolle und Zuverlässigkeit von Energieszenarien in der wissenschaftlichen Politikberatung untersucht.
+
+## Forschungsinteressen
+
+Aufgrund meines naturwissenschaftlichen Hintergrunds habe ich eine ausgeprägte Neigung zur analytischen Philosophie. Zu meinen Forschungsinteressen gehören Argumentationsanalyse, (Methodologie der) Inhaltsanalyse, angewandte Ethik, formale Erkenntnistheorie und Wissenschaftsphilosophie.
+
+Argumente im Detail zu verstehen, ist eine Herausforderung, die mich schon immer antrieb. Gerade philosophische Argumentationen haben oft den Anschein, auf irgendwelchen Tricks zu beruhen, die ich gern aufdecken möchte. Als ich anfing, mich mit Methoden der Logik und der Argumentationstheorie zu beschäftigen, wurde mir schnell klar, dass sie präzise Werkzeuge bieten, um Argumente systematisch zu verstehen und zu bewerten. Seitdem begleiten mich diese Methoden in meiner wissenschaftlichen Arbeit in ganz unterschiedlichen Forschungskontexten.
+
+Mich interessieren vor allem die folgenden Fragen:
+
+1.  **Deliberative Normen und Normen des öffentlichen Diskurses:** Wie sollten wir als Gesellschaft den öffentlichen Diskurs und Deliberation gestalten und regulieren? Welche Rolle sollte Deliberation in der kollektiven Entscheidungsfindung spielen?
+2.  **Die Vermessung des öffentlichen Diskurses:** Wie können Methoden der Argumentationstheorie dazu beitragen, den öffentlichen Diskurs besser zu verstehen?
+3.  **Argumentation und generative KI:** Wie kann generative KI genutzt werden, um den öffentlichen Diskurs zu analysieren?
+
+### Deliberative Normen und Normen des öffentlichen Diskurses
+
+Im öffentlichen Diskurs, der unter anderem vermittelt über Massenmedien, in sozialen Medien, in demokratischen Institutionen und im Rahmen von politischen Veranstaltungen geführt wird, treffen unterschiedliche Ansichten zu Anliegen des öffentlichen Zusammenlebens aufeinander. Deliberation bezeichnet den rationalen Austausch von Gründen zur kollektiven Entscheidungsfindung. Deliberation ist eng mit dem Ideal deliberativer Demokratie verbunden, in der die rationale Argumentation zwischen Bürger:innen eine zentrale Rolle in politischen Entscheidungsprozessen spielt. Gemäß diesem Ideal spielt die Aggregation von Präferenzen (z.B. in Form von Wahlen) fast schon eine untergeordnete Rolle in der kollektiven Entscheidungsfindung. Zentral sind der Austausch von Argumenten und die Bereitschaft, die eigene Meinung im Lichte neuer Evidenzen und guter Argumente zu revidieren.
+
+Öffentlicher Diskurs und Deliberation sind eng miteinander verknüpft. So werden im öffentlichen Diskurs in der Regel Argumente ausgetauscht, die wiederum mindestens mittelbar die politische Entscheidungsfindung in demokratischen Gesellschaften beeinflussen. Damit ist die öffentliche Debatte oft eine Form der Deliberation. Weil politische Entscheidungen weitreichende Konsequenzen für das Wohlergehen vieler Menschen über Ländergrenzen und Generationen hinweg haben können und dabei besser oder schlechter ausfallen, sollten wir uns als Gesellschaft sorgfältig überlegen, wie wir den öffentlichen Diskurs und die Deliberation im Allgemeinen gestalten, um das gesamtgesellschaftliche Wohlergehen zu maximieren.
+
+Idealerweise würden Bürger:innen im öffentlichen Diskurs ihre Ansichten wahrheitsgemäß und faktenbasiert austauschen, einander respektieren und die Bereitschaft zeigen, diese im Lichte neuer Evidenzen zu revidieren. Idealerweise hätten alle Bürger:innen die gleichen Möglichkeiten, ihre Ansichten einzubringen, die anschließend konstruktiv und rational diskutiert würden. Diese Idealvorstellungen werden wohl von wenigen in Frage gestellt. Weitaus schwieriger ist es, sie für spezifische Kontexte zu konkretisieren und die damit verbundenen Abwägungen zu treffen.
+
+Talkshows gehören zum öffentlichen Diskurs, sind aber gleichwohl Teil einer Unterhaltungsindustrie, die auf Aufmerksamkeits- und z.T. auf Gewinnmaximierung ausgerichtet ist. Sie sind damit ein gutes Beispiel, um zu verdeutlichen, dass die Realisierung der skizzierten Ideale im Einzelfall eine Vielzahl interessanter Fragen aufwirft: Haben öffentliche Medien eine Verpflichtung, deliberative Ideale in Talkshows zu realisieren? Wer sollte gemäß diesen Idealen zu politischen Talkshows eingeladen werden? Sollte das gesamte Spektrum öffentlicher Meinungen vertreten sein? Sollten Expert:innen eine besondere Rolle spielen? Wie sollten Talkshows moderiert werden, um deliberativen Idealen gerecht zu werden?
+
+### Die Vermessung des öffentlichen Diskurses
+
+Man kann über den öffentlichen Diskurs und die Deliberation auf unterschiedliche Weise nachdenken. Die gerade skizzierten Fragen sind normativ, d.h. sie fragen danach, was wir tun sollen und wie wir Handlungen auf der Grundlage moralischer Überlegungen begründen können. Wir können aber auch fragen, in welchem Ausmaß der öffentliche Diskurs bereits den deliberativen Idealen entspricht und nach Erklärungen suchen, warum es eine Lücke zwischen tatsächlicher Praxis und den Idealen gibt.
+
+Diese empirischen Fragen können aus der Perspektive unterschiedlicher Forschungsdisziplinen untersucht werden, z. B. der Soziologie, Kommunikationswissenschaft, Psychologie und Linguistik. Mit meinem Hintergrund in der Argumentationstheorie bin ich vor allem an einer argumentativen Analyse des öffentlichen Diskurses interessiert. So kann man sich bspw. fragen, ob es eine typische Argumentation des Rechtspopulismus gibt: Verwenden Populist:innen vielleicht bestimmte Argumente häufiger als andere Politiker:innen? Sind sie gar anfälliger für Fehlschlüsse? Welche Art von argumentativen Strategien wenden sie an?
+
+Für die Beantwortung solcher Fragen sind empirische Methoden erforderlich. Man könnte sagen, dass man den öffentlichen Diskurs dazu messbar machen muss. Aber welche Messinstrumente sind dafür überhaupt geeignet? Die etablierten Methoden der angewandten formalen und informellen Logik können hierfür prinzipiell eingesetzt werden. Allerdings wurde sie nicht speziell für den Einsatz in sozio-empirischen Kontexten konzipiert. Daher haben sie Schwierigkeiten, bestimmten wissenschaftlichen Kriterien zu genügen, insbesondere solchen, die mit Reproduzierbarkeit zusammenhängen.
+
+Die zentrale Herausforderung in Bezug auf die Reproduzierbarkeit hängt mit der interpretativen Natur der Analyse natürlichsprachlicher Argumentation zusammen. Argumente zu analysieren ist ein Prozess der Interpretation. Dabei können unterschiedliche Analyst:innen zu unterschiedlichen Ergebnissen kommen. Diese hermeneutische Unterbestimmtheit der Argumentationsanalyse stellt eine Hürde für den Einsatz dieser Methoden in sozio-empirischen Kontexten dar. Warum? Um Merkmale des öffentlichen Diskurses “messbar” zu machen, muss sichergestellt werden, dass divergierende “Messergebnisse” auch Unterschieden in dem, was gemessen wird, entsprechen. Das heißt, Messunterschiede sollten auf Unterschiede in den zu messenden Phänomenen zurückzuführen sein. Aufgrund der hermeneutischen Unterbestimmtheit in der Argumentationsanalyse können divergierende Ergebnisse solcher Analysen jedoch zwei Ursachen haben: Sie können sowohl durch Unterschiede in den zu messenden Phänomenen als auch durch divergierende interpretative Entscheidungen der Analyst:innen erklärt werden. In meiner Dissertation habe ich einen Lösungsvorschlag über die Formulierung eines statistischen Reproduzierbarkeitskonzepts für dieses Problem skizziert.
+
+### Argumentation und generative KI
+
+Mit dem Aufkommen von ChatGPT ist vielen Menschen die Leistungsfähigkeit großer Sprachmodelle (LLMs) bewusst geworden. Sprachmodelle werden sowohl die Textgenerierung als auch die Sprachanalyse revolutionieren. Gerade ihr Einsatz in den skizzierten normativen und empirischen Kontexten birgt großes Potenzial. Aber wie können wir LLMs konkret einsetzen, um den öffentlichen Diskurs zu verbessern und zu analysieren?
+
+*Stärkung des öffentlichen Diskurses:* Im öffentlichen Diskurs werden Texte produziert. Da LLMs besonders gut darin sind, Text zu erzeugen, liegt es nahe, dass LLM-basierte Tools den öffentlichen Diskurs verbessern können. Sie könnten bspw. Bürger:innen dabei helfen, die Argumente anderer zu verstehen oder ihre eigenen zu formulieren. Auf diese Weise könnten LLMs dazu beitragen, die Qualität des öffentlichen Diskurses zu verbessern, Inklusion und Gleichberechtigung zu stärken oder sogar bestehende Probleme in sozialen Medien (wie toxische Sprache und Desinformation) zu lösen. Das Forschungsprojekt [*KIdeKu*](https://compphil2mmae.github.io/research/kideku/) zielte darauf ab, diese Potenziale auszuloten.
+
+*Analyse des öffentlichen Diskurses:* Die Analyse des öffentlichen Diskurses ist mit voraussetzungsreichen und ressourcenintensiven Aufgaben verbunden. So müssen umfangreiche Textkorpora annotiert und kategorisiert werden, was oft Zeit und Mühe erfordert. Darüber hinaus müssen Annotator:innen umfassend geschult werden. Dementsprechend lassen sich solche Textanalysen nur schwer skalieren. Es liegt daher nahe, zu prüfen, ob LLMs einige Aufgaben bei der Analyse des öffentlichen Diskurses übernehmen könnten. Wenn dies möglich wäre, könnte die Analyse auf größere Textkorpora angewendet werden, ohne auf eine Vielzahl von Annotator:innen angewiesen zu sein.
+
+## Veröffentlichungen
+
+- S. Cacean, *Analysing Argumentation Structures—A Minimalistic Annotation Scheme.* \[<https://doi.org/10.5281/zenodo.22709968>\].
+- S. Cacean, *Chancen von KI zur Stärkung deliberativer Kultur.* Karlsruhe, 2026. \[<https://doi.org/10.5445/IR/1000193096>\].
+- S. Cacean, *Content Analysis of Argumentation Structures - The Role of Reliability in Argument Mapping.* Karlsruhe: KITopen, 2025. \[<https://doi.org/10.5445/IR/1000182475>\].
+- A. Freivogel & S. Cacean, “Assessing a Formal Model of Reflective Equilibrium”, 2024. \[<https://doi.org/10.5281/zenodo.13294165>\]
+- S. Cacean, Reliability of Argument Mapping. *Proceedings of ECA 2019 Groningen*.
+- S. Cacean, *Forschungsbericht Bürgerdelphi Keimbahntherapie*. Karlsruhe, 2019. \[<https://doi.org/10.5445/IR/1000096790>\]
+- S. Cacean, “Die Begründung relevanter Möglichkeiten durch idealisierte Modelle”, in *Die Energiewende und ihre Modelle: Was uns Energieszenarien sagen können - und was nicht*, C. Dieckhoff & A. Leuschner, Hrsg. Bielefeld: transcript, 2016, pp. 46–74.
+- S. Cacean und C. Voigt, “Visualisierung und Analyse von Evidenzen mit Hilfe von Argumentkarten”, *TATuP*, Vol. 22, Nr. 3, pp. 38–45, Nov. 2013. \[<https://doi.org/10.14512/tatup.22.3.38>\]
+- S. Cacean, “Ethische Aspekte von Cognitive Enhancement”, in Sport, *Doping und Enhancement Ergebnisse und Denkanstöße*, G. Spitzer & E. Franke, Hrsg. Köln: Sportverl. Strauß, 2012, pp. 151–220. \[[preprint](https://www.academia.edu/25636493/Ethische_Aspekte_von_Cognitive_Enhancement_Eine_Analyse_mit_Argumentkarten_preprint_version_)\]
+- G. Betz & S. Cacean, *Ethical Aspects of Climate Engineering*. Karlsruhe: KIT Scientific Publishing, 2012. \[<https://doi.org/10.5445/KSP/1000028245>\]
+- G. Betz, S. Cacean et al., “Large-Scale Intentional Interventions into the Climate System? Assessing the Climate Engineering Debate. Scoping report conducted on behalf of the German Federal Ministry of Education and Research (BMBF)”, Kiel Earth Institute, Kiel, 2011. \[[external link](https://www.ifw-kiel.de/publications/large-scale-intentional-intervention-s-into-the-climate-system-assessing-the-climate-engineering-debate-24573/)\]
+
+Zurück nach oben

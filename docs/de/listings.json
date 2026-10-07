@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/argumentative-content-analysis/index.html",
+      "/projects/evidence-seeker/index.html",
+      "/projects/toxicity-detector/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/quarto-argdown-pdf-documents/index.html",
+      "/posts/mannosas/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/argumentative-content-analysis/index.html",
+    "items": [
+      "/posts/mannosas/index.html"
+    ]
+  }
+]

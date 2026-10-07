@@ -1,0 +1,43 @@
+/*-- scss:defaults --*/
+
+// Colors extracted from xylomorph.github.io Eleventy site
+// Dark mode color scheme
+
+$bc-bg-primary:           rgb(24, 24, 27);   // Main background (dark grey)
+$bc-bg-secondary:         rgb(42, 42, 43);    // Secondary background (medium grey)
+$bc-bg-accent:            rgb(8, 51, 68);     // Accent background
+$bc-bg-darker:            #000;               // Darker shade (if needed)
+
+$bc-text-primary:         rgb(161, 161, 170);
+$bc-text-secondary:       rgba(244, 244, 245, 0.72);
+$bc-text-title:           rgb(244, 244, 245);
+$bc-text-alt:             rgb(244, 244, 245);
+
+$bc-link-primary:         rgb(8, 145, 178);
+$bc-link-hover:           rgb(8, 145, 178);
+
+$bc-border-color:         rgb(39, 39, 42);
+
+$bc-secondary-color:      rgb(22, 78, 99);
+$bc-danger:               #e03e3e;
+
+// CSS variables for runtime theming
+:root {
+  --bc-bg-primary:        #000;
+  --bc-bg-wrapper:        rgb(24, 24, 27);
+  --bc-bg-secondary:      rgb(42, 42, 43);
+  --bc-bg-accent:         rgb(8, 51, 68);
+  
+  --bc-text-primary:      rgb(161, 161, 170);
+  --bc-text-secondary:    rgba(244, 244, 245, 0.72);
+  --bc-text-title:        rgb(244, 244, 245);
+  --bc-text-alt:          rgb(244, 244, 245);
+  
+  --bc-link-primary:      rgb(8, 145, 178);
+  --bc-link-hover:        rgb(8, 145, 178);
+  
+  --bc-border-color:      rgb(39, 39, 42);
+  
+  --bc-secondary-color:   rgb(22, 78, 99);
+  --bc-danger:            #e03e3e;
+}

@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+// Colors extracted from xylomorph.github.io Eleventy site
+// Light mode color scheme
+
+$bc-bg-primary:           #fff;
+$bc-bg-secondary:         #f7f7f7;
+$bc-bg-accent:            rgb(174, 182, 225);
+$bc-bg-hover:             rgba(243, 244, 246, 0.8);
+
+$bc-text-primary:         #222;
+$bc-text-secondary:       #6b7280;
+$bc-text-alt:             #fff;
+
+$bc-link-primary:         #2f5bc2;
+$bc-link-hover:           #2f5bc2;
+
+$bc-border-color:         rgba(0, 0, 0, 0.06);
+
+$bc-danger:               #e03e3e;
+
+// CSS variables for runtime theming
+:root {
+  --bc-bg-primary:        #fff;
+  --bc-bg-secondary:      #f7f7f7;
+  --bc-bg-accent:         rgb(174, 182, 225);
+  --bc-bg-hover:          rgba(243, 244, 246, 0.8);
+  
+  --bc-text-primary:      #222;
+  --bc-text-secondary:    #6b7280;
+  --bc-text-alt:          #fff;
+  
+  --bc-link-primary:      #2f5bc2;
+  --bc-link-hover:        #2f5bc2;
+  
+  --bc-border-color:      rgba(0, 0, 0, 0.06);
+  
+  --bc-danger:            #e03e3e;
+}
