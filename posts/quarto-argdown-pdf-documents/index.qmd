@@ -2,7 +2,7 @@
 title: "Creating Polished PDF Documents With Quarto and Argdown"
 description: "How to use Markdown documents with Argdown source blocks to document and present argumentation analyses, and how to turn them into polished PDFs with Quarto."
 author: "Sebastian Cacean"
-permalink: "https://sebastiancacean.com/posts/quarto-argdown-pdf-documents/"
+permalink: "https://sebastiancacean.de/posts/quarto-argdown-pdf-documents/"
 date: "2026-10-07"
 categories: [argdown, quarto, markdown, pdf, publishing]
 image: "img/argdown-markdown-to-pdf.png"

@@ -2,7 +2,7 @@
 title: "🔎 MAnnoSAS"
 description: "A Minimalistic Annotation Scheme of Argumentation Structures"
 date: "2026-10-01"
-permalink: "https://sebastiancacean.com/posts/mannosas/"
+permalink: "https://sebastiancacean.de/posts/mannosas/"
 categories: [argumentative content analysis, argumentation theory, annotation scheme, discourse analysis]
 license: CC BY
 links:
