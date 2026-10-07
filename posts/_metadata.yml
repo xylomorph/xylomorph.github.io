@@ -46,13 +46,3 @@ twitter-card:
 open-graph:
   image: featured.png
 
-# comments with Giscus
-website:
-  comments:
-    giscus:
-      repo: xylomorph/xylomorph.github.io
-      category: Announcements
-      reactions-enabled: true
-      theme:
-        light: light # giscus theme used for light website theme
-        dark: dark_dimmed # giscus theme used for dark website theme

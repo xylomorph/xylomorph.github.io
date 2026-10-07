@@ -400,7 +400,7 @@ window.Quarto = {
 </ul></section><section id="posts-involving-argumentative-content-analysis" class="level2"><h2 class="anchored" data-anchor-id="posts-involving-argumentative-content-analysis">Posts involving argumentative content analysis</h2>
 <div id="listing-posts" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="YXJndW1lbnRhdGl2ZSUyMGNvbnRlbnQlMjBhbmFseXNpcyUyQ2FyZ3VtZW50YXRpb24lMjB0aGVvcnklMkNhbm5vdGF0aW9uJTIwc2NoZW1lJTJDZGlzY291cnNlJTIwYW5hbHlzaXM=" data-listing-date-sort="1790805600000" data-listing-file-modified-sort="1791383191446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="865">
+<div class="g-col-1" data-index="0" data-categories="YXJndW1lbnRhdGl2ZSUyMGNvbnRlbnQlMjBhbmFseXNpcyUyQ2FyZ3VtZW50YXRpb24lMjB0aGVvcnklMkNhbm5vdGF0aW9uJTIwc2NoZW1lJTJDZGlzY291cnNlJTIwYW5hbHlzaXM=" data-listing-date-sort="1790805600000" data-listing-file-modified-sort="1791383622052" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="865">
 <a href="../../posts/mannosas/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img loading="lazy" src="../../posts/mannosas/fig-annot-guidelines-03.png" style="height: 200;" class="thumbnail-image card-img"></p>
@@ -833,7 +833,36 @@ window.Quarto = {
       }
     }
   });
-  </script>
+  </script><input type="hidden" id="giscus-base-theme" value="light"><input type="hidden" id="giscus-alt-theme" value="dark_dimmed"><script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "xylomorph/xylomorph.github.io";
+    script.dataset.repoId = "R_kgDOMi7-ew";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOMi7-e84DHO72";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
