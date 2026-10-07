@@ -66,6 +66,7 @@ format:
 
 filters:
   - node_modules/.bin/argdown-filter
+  - scripts/permalink-encode.lua
 
 babelquarto:
   languagelinks: navbar
